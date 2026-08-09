@@ -6,31 +6,14 @@
  * exercícios, resumo) fica em js/data/questoes/aula-N.mjs.
  */
 const MODULOS = [
-  {
-    id:      1,
-    titulo:  "fqfq",
-    materia: "fqfq",
-    aulas: [
-      {
-        id:      1,
-        titulo:  "qfqfq",
-        arquivo: "aula-1",
-        icone:   'padrao',
-      }
-    ],
-  }
+
 ];
 
 /**
  * NIVEIS.JS — Agrupa etapas em ciclos.
  */
 const NIVEIS = [
-  {
-    id:          1,
-    titulo:      "afafa",
-    etapas:      [1],
-    insigniaUrl: "",
-  }
+
 ];
 
 /**
