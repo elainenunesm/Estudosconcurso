@@ -39,8 +39,8 @@ window.AULA_DATA = {
         "AFQFDQ"
       ],
       rotulos: [
-        "",
-        "V",
+        "SUJEITO",
+        "VERBO;PREDICADO",
         ""
       ],
       instrucaoDestaque: []
