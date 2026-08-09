@@ -1,13 +1,13 @@
 'use strict';
 
 /**
- * AULA-2.MJS — Nova aula
+ * AULA-2.MJS — aula2
  * Gerado pelo Construtor de Aulas (aba "Conteúdo da aula").
  */
 window.AULA_DATA = {
   id:     2,
   modulo: "teste1",
-  titulo: "Nova aula",
+  titulo: "aula2",
 
   // Ordem das telas na sequência de estudo — definida em "Estrutura das telas".
   ordem: [
@@ -17,10 +17,12 @@ window.AULA_DATA = {
 ],
 
   antesComecar: {
-  titulo: "",
-  descricao: "",
+  titulo: "fafa",
+  descricao: "faf",
   aprender: "",
-  importancia: ""
+  importancia: "",
+  tituloDestaque: [],
+  descricaoDestaque: []
 },
 
   exemplo: [],
