@@ -16,6 +16,12 @@ const MODULOS = [
         titulo:  "aula",
         arquivo: "aula-1",
         icone:   'padrao',
+      },
+      {
+        id:      2,
+        titulo:  "Nova aula",
+        arquivo: "aula-2",
+        icone:   'padrao',
       }
     ],
   }
