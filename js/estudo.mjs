@@ -385,6 +385,24 @@ function estiloTextoInline(obj, campo, extraCss) {
   return partes.length ? ` style="${partes.join(';')}"` : '';
 }
 
+/** "Card de áudio"/"Card de gravação" (Construtor de Aulas) — mesmo layout pros dois: player de
+ * áudio nativo em cima, título/subtítulo/texto opcionais embaixo. A diferença entre eles é só
+ * como o áudio foi obtido no editor (arquivo importado x gravado pelo microfone); no player pra
+ * aluna os dois tocam do mesmo jeito. */
+function htmlCardAudio(a) {
+  if (!a) return '';
+  if (!a.audioUrl && !a.titulo && !a.subtitulo && !a.texto) return '';
+  return `
+      <div class="card-audio">
+        ${a.audioUrl ? `<audio class="card-audio-player" controls src="${a.audioUrl}"></audio>` : ''}
+        ${(a.titulo || a.subtitulo || a.texto) ? `<div class="card-audio-corpo">
+          ${a.titulo ? `<p class="card-audio-titulo"${estiloTextoInline(a, 'titulo')}>${renderFraseComDestaque(a.titulo, a.tituloDestaque)}</p>` : ''}
+          ${a.subtitulo ? `<p class="card-audio-subtitulo"${estiloTextoInline(a, 'subtitulo')}>${renderFraseComDestaque(a.subtitulo, a.subtituloDestaque)}</p>` : ''}
+          ${a.texto ? `<p class="card-audio-texto"${estiloTextoInline(a, 'texto')}>${renderFraseComDestaque(a.texto, a.textoDestaque)}</p>` : ''}
+        </div>` : ''}
+      </div>`;
+}
+
 /** Igual a anotarRotuloGenerico, mas pra vários índices de uma vez — agrupa em blocos contíguos
  * (2 palavras seguidas ganham um colchete só; palavras separadas ganham um colchete cada). */
 function anotarRotuloGenericoMultiplo(wrap, indices, rotulo) {
@@ -752,6 +770,8 @@ function mostrarExemplo(aula, introIdx, i) {
           ${ex.cardImagem.texto ? `<p class="card-imagem-texto"${estiloTextoInline(ex.cardImagem, 'texto')}>${renderFraseComDestaque(ex.cardImagem.texto, ex.cardImagem.textoDestaque)}</p>` : ''}
         </div>` : ''}
       </div>` : ''}
+      ${htmlCardAudio(ex.audio)}
+      ${htmlCardAudio(ex.gravacao)}
       ${ex.flashcard ? `
       <div class="flashcard-wrap">
         <div class="flashcard" id="flashcardCard" role="button" tabindex="0" aria-label="Toque para virar o card">

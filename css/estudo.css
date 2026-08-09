@@ -515,6 +515,56 @@ body {
   margin-top: 0;
 }
 
+.card-audio {
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #ececf5;
+  background: #fbfaff;
+  padding: 14px 16px;
+}
+
+.card-audio-player {
+  display: block;
+  width: 100%;
+}
+
+.card-audio-corpo {
+  padding-top: 12px;
+}
+
+.card-audio-corpo:first-child {
+  padding-top: 0;
+}
+
+.card-audio-titulo {
+  font-size: 17px;
+  color: #1a1a2e;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.card-audio-subtitulo {
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.4;
+  text-align: left;
+  margin-top: 2px;
+}
+
+.card-audio-texto {
+  font-size: 15px;
+  color: #1a1a2e;
+  line-height: 1.55;
+  text-align: left;
+  margin-top: 8px;
+}
+
+.card-audio-titulo:first-child,
+.card-audio-subtitulo:first-child,
+.card-audio-texto:first-child {
+  margin-top: 0;
+}
+
 .flashcard-wrap {
   display: flex;
   flex-direction: column;
