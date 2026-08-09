@@ -1,13 +1,13 @@
 'use strict';
 
 /**
- * AULA-1.MJS — fq2f
+ * AULA-1.MJS — gfw4gf4g
  * Gerado pelo Construtor de Aulas (aba "Conteúdo da aula").
  */
 window.AULA_DATA = {
   id:     1,
-  modulo: "feqf",
-  titulo: "fq2f",
+  modulo: "fqfqf",
+  titulo: "gfw4gf4g",
 
   // Ordem das telas na sequência de estudo — definida em "Estrutura das telas".
   ordem: [
