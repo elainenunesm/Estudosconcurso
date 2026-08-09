@@ -1,13 +1,13 @@
 'use strict';
 
 /**
- * AULA-1.MJS — Nova aula
+ * AULA-1.MJS — aula
  * Gerado pelo Construtor de Aulas (aba "Conteúdo da aula").
  */
 window.AULA_DATA = {
   id:     1,
   modulo: "teste1",
-  titulo: "Nova aula",
+  titulo: "aula",
 
   // Ordem das telas na sequência de estudo — definida em "Estrutura das telas".
   ordem: [
