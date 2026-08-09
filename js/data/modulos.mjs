@@ -13,7 +13,7 @@ const MODULOS = [
     aulas: [
       {
         id:      1,
-        titulo:  "Nova aula",
+        titulo:  "fq2f",
         arquivo: "aula-1",
         icone:   'padrao',
       }
