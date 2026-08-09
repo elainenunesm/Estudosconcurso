@@ -40,9 +40,7 @@ window.AULA_DATA = {
     opcoesNegrito: [],
     opcoesItalico: [],
     opcoesDestaque: [
-      [
-        0
-      ],
+      [],
       []
     ]
   }
