@@ -8,15 +8,10 @@
 const MODULOS = [
   {
     id:      1,
-    titulo:  "CFWFCW",
-    materia: "CFWFCW",
+    titulo:  "Nova matéria",
+    materia: "Nova matéria",
     aulas: [
-      {
-        id:      1,
-        titulo:  "FWF",
-        arquivo: "aula-1",
-        icone:   'padrao',
-      }
+
     ],
   }
 ];
@@ -27,7 +22,7 @@ const MODULOS = [
 const NIVEIS = [
   {
     id:          1,
-    titulo:      "dFd",
+    titulo:      "avavafrfcr",
     etapas:      [1],
     insigniaUrl: "",
   }
