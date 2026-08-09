@@ -283,3 +283,18 @@ async function alternarTrilhaEscolhida(trilhaId) {
   const salvou = await gravarArquivoProgresso({ trilhasEscolhidas });
   return { escolhendo, salvou };
 }
+
+// ── GRAVAÇÕES DA ALUNA (cards "Gravação do aluno") ─────────────
+// Guardadas por aula + posição do card na tela (mesma chave usada pelo "marcar pra revisão",
+// ex: "exemplo0") — a aluna pode gravar de novo quantas vezes quiser, cada gravação nova
+// substitui a anterior daquele card.
+async function getGravacaoAluna(aulaId, chave) {
+  const dados = await lerArquivoProgresso();
+  return (dados?.gravacoesAluna?.[aulaId]?.[chave]) || null;
+}
+async function salvarGravacaoAluna(aulaId, chave, audioUrl) {
+  const dados = await lerArquivoProgresso();
+  const gravacoesAluna = { ...(dados.gravacoesAluna || {}) };
+  gravacoesAluna[aulaId] = { ...(gravacoesAluna[aulaId] || {}), [chave]: audioUrl };
+  return gravarArquivoProgresso({ gravacoesAluna });
+}

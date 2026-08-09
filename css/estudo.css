@@ -553,6 +553,48 @@ body {
   text-align: left;
 }
 
+.gravacao-aluno-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gravacao-aluno-controles {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-gravar-audio-aluno {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  background: var(--cor-primaria);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-gravar-audio-aluno:hover { background: var(--cor-primaria-escura); }
+.btn-gravar-audio-aluno.gravando { background: #dc2626; }
+.btn-gravar-audio-aluno.gravando:hover { background: #b91c1c; }
+
+.gravacao-aluno-status {
+  font-size: 13px;
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.gravacao-aluno-preview audio {
+  display: block;
+  width: 100%;
+}
+
 .flashcard-wrap {
   display: flex;
   flex-direction: column;
