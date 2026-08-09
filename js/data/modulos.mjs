@@ -8,12 +8,12 @@
 const MODULOS = [
   {
     id:      1,
-    titulo:  "f2fggf",
-    materia: "f2fggf",
+    titulo:  "wgwgw",
+    materia: "wgwgw",
     aulas: [
       {
         id:      1,
-        titulo:  "2g2g2",
+        titulo:  "wgwg",
         arquivo: "aula-1",
         icone:   'padrao',
       }
@@ -27,7 +27,7 @@ const MODULOS = [
 const NIVEIS = [
   {
     id:          1,
-    titulo:      "fafag",
+    titulo:      "fgwgwf",
     etapas:      [1],
     insigniaUrl: "",
   }
