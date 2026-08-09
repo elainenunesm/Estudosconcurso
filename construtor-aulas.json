@@ -1,0 +1,13 @@
+{
+  "savedAt": "2026-08-09T21:06:14.072Z",
+  "config": {
+    "titulo": "Minhas Aulas",
+    "subtitulo": "Gerado pelo Construtor de Aulas",
+    "tipoLogo": "icone",
+    "icone": "capelo",
+    "imagemUrl": "",
+    "cor": "#5B2BCB"
+  },
+  "ciclos": [],
+  "trilhas": []
+}
