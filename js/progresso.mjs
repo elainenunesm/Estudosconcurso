@@ -164,11 +164,15 @@ async function lerArquivoProgresso() {
   return _progressoCache;
 }
 
+/** Devolve true só quando realmente há uma pasta conectada pra gravar — sem isso, o progresso
+ * fica só na memória (dura até fechar a aba) e quem chamou precisa saber disso pra avisar a
+ * aluna, em vez de mostrar "salvo com sucesso" pra algo que não vai persistir (ver
+ * alternarCartaoMarcado/alternarTrilhaEscolhida, que já esperavam esse retorno certo). */
 async function gravarArquivoProgresso(mudancas) {
   await garantirInicializado();
   _progressoCache = { ..._progressoCache, ...mudancas, savedAt: new Date().toISOString() };
   await escreverArquivoProgresso();
-  return true;
+  return !!_pastaProgressoHandle;
 }
 
 // ── CADERNO DE ERROS (persistido junto com o progresso) ──────

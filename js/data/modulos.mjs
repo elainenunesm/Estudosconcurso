@@ -6,25 +6,7 @@
  * exercícios, resumo) fica em js/data/questoes/aula-N.mjs.
  */
 const MODULOS = [
-  {
-    id:      1,
-    titulo:  "teste1",
-    materia: "teste1",
-    aulas: [
-      {
-        id:      1,
-        titulo:  "aula",
-        arquivo: "aula-1",
-        icone:   'padrao',
-      },
-      {
-        id:      2,
-        titulo:  "aula2",
-        arquivo: "aula-2",
-        icone:   'padrao',
-      }
-    ],
-  }
+
 ];
 
 /**
@@ -33,8 +15,8 @@ const MODULOS = [
 const NIVEIS = [
   {
     id:          1,
-    titulo:      "teste1",
-    etapas:      [1],
+    titulo:      "dDfff",
+    etapas:      [],
     insigniaUrl: "",
   }
 ];
