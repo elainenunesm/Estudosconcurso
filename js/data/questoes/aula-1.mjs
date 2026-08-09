@@ -14,6 +14,7 @@ window.AULA_DATA = {
   "antesComecar",
   "exemplo0",
   "exemplo1",
+  "exemplo2",
   "resumo",
   "licao"
 ],
@@ -55,6 +56,22 @@ window.AULA_DATA = {
       subtitulo: "efcre",
       texto: "vcrf",
       obrigatorio: false,
+      tituloDestaque: [],
+      subtituloDestaque: [],
+      textoDestaque: []
+    }
+  },
+  {
+    tipo: "acao",
+    texto: "",
+    conclusao: "",
+    obs: "",
+    pontos: [],
+    gravacaoAluno: {
+      titulo: "fewfc",
+      subtitulo: "efce",
+      texto: "ferf",
+      obrigatorio: true,
       tituloDestaque: [],
       subtituloDestaque: [],
       textoDestaque: []
