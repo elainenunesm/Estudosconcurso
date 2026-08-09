@@ -1,18 +1,17 @@
 'use strict';
 
 /**
- * AULA-1.MJS — FWF
+ * AULA-1.MJS — xaqdxqd
  * Gerado pelo Construtor de Aulas (aba "Conteúdo da aula").
  */
 window.AULA_DATA = {
   id:     1,
-  modulo: "CFWFCW",
-  titulo: "FWF",
+  modulo: "cacedc",
+  titulo: "xaqdxqd",
 
   // Ordem das telas na sequência de estudo — definida em "Estrutura das telas".
   ordem: [
   "antesComecar",
-  "exemplo0",
   "resumo",
   "licao"
 ],
@@ -24,29 +23,7 @@ window.AULA_DATA = {
   importancia: ""
 },
 
-  exemplo: [
-  {
-    tipo: "acao",
-    texto: "",
-    conclusao: "",
-    obs: "",
-    pontos: [],
-    palavraMultiplosRotulos: {
-      instrucao: "FAFAF",
-      sentenca: [
-        "FAFA",
-        "AFCAF",
-        "AFQFDQ"
-      ],
-      rotulos: [
-        "SUJEITO",
-        "VERBO;PREDICADO",
-        "PREDICADO"
-      ],
-      instrucaoDestaque: []
-    }
-  }
-],
+  exemplo: [],
 
   checagem: [],
 
