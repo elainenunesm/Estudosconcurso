@@ -6,7 +6,19 @@
  * exercícios, resumo) fica em js/data/questoes/aula-N.mjs.
  */
 const MODULOS = [
-
+  {
+    id:      1,
+    titulo:  "e3d",
+    materia: "e3d",
+    aulas: [
+      {
+        id:      1,
+        titulo:  "3r31",
+        arquivo: "aula-1",
+        icone:   'padrao',
+      }
+    ],
+  }
 ];
 
 /**
@@ -16,7 +28,7 @@ const NIVEIS = [
   {
     id:          1,
     titulo:      "fd3df",
-    etapas:      [],
+    etapas:      [1],
     insigniaUrl: "",
   }
 ];
