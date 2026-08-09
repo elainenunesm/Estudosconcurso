@@ -33,8 +33,16 @@ window.AULA_DATA = {
     pontos: [],
     palavraMultiplosRotulos: {
       instrucao: "FAFAF",
-      sentenca: [],
-      rotulos: [],
+      sentenca: [
+        "FAFA",
+        "AFCAF",
+        "AFQFDQ"
+      ],
+      rotulos: [
+        "",
+        "V",
+        ""
+      ],
       instrucaoDestaque: []
     }
   }
