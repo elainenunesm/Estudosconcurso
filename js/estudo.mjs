@@ -553,6 +553,43 @@ function agruparRotulos(rotulos) {
   return grupos;
 }
 
+/** Uma palavra pode ter mais de um rótulo ao mesmo tempo (ex: "jogaram" é VERBO e também faz
+ * parte do PREDICADO) — nesse caso o Construtor de Aulas separa os rótulos por ";" no campo de
+ * texto. Retorna a lista (vazia se não tiver rótulo nenhum). */
+function listaRotulos(rotuloTexto) {
+  return String(rotuloTexto || '').split(';').map(s => s.trim()).filter(Boolean);
+}
+
+/** Decide em que "linha" (nível de colchete) cada rótulo distinto vai ficar: um rótulo que nunca
+ * aparece sozinho — só como o 2º (ou 3º...) de uma palavra com vários — fica numa linha mais
+ * abaixo, pra caber o colchete mais largo embaixo dos colchetes menores (ex: SUJEITO/VERBO em
+ * cima, PREDICADO — mais largo, cobre também o VERBO — embaixo). Calculada a partir dos rótulos DE
+ * VERDADE (não dos já revelados), pra não pular de linha conforme a aluna vai clicando. */
+function linhaPorRotulo(n, rotulosBrutos) {
+  const linha = new Map();
+  for (let i = 0; i < n; i++) {
+    listaRotulos(rotulosBrutos[i]).forEach((r, pos) => {
+      linha.set(r, Math.max(linha.get(r) ?? 0, pos));
+    });
+  }
+  return linha;
+}
+
+/** A partir da linha de cada rótulo (linhaPorRotulo), monta um array por linha — cada um no
+ * formato que agruparRotulos() espera (uma entrada por palavra, '' se não tiver rótulo NESSA
+ * linha). `rotulosBrutos` pode já vir filtrado (ex: só os rótulos das palavras reveladas). */
+function porLinha(n, rotulosBrutos, linhaDoRotulo) {
+  const totalLinhas = linhaDoRotulo.size ? Math.max(...linhaDoRotulo.values()) + 1 : 0;
+  const linhas = Array.from({ length: totalLinhas }, () => Array(n).fill(''));
+  for (let i = 0; i < n; i++) {
+    listaRotulos(rotulosBrutos[i]).forEach(r => {
+      const l = linhaDoRotulo.get(r);
+      if (l !== undefined) linhas[l][i] = r;
+    });
+  }
+  return linhas;
+}
+
 /** Paleta usada pra dar uma cor diferente a cada rótulo distinto (ex: SUJEITO roxo, VERBO verde) —
  * a cor é sempre a mesma pro mesmo texto de rótulo, na ordem em que aparecem na frase. */
 const PALETA_ROTULOS = ['#7B3FF2', '#0D9488', '#DB2777', '#EA580C', '#0EA5E9', '#65A30D', '#DC2626', '#9333EA'];
@@ -560,21 +597,24 @@ function corDoRotulo(rotulo, mapaCores) {
   if (!mapaCores.has(rotulo)) mapaCores.set(rotulo, PALETA_ROTULOS[mapaCores.size % PALETA_ROTULOS.length]);
   return mapaCores.get(rotulo);
 }
-function mapaCoresRotulos(rotulos) {
+function mapaCoresRotulos(rotulosBrutos) {
   const mapa = new Map();
-  (rotulos || []).forEach(r => { if (r) corDoRotulo(r, mapa); });
+  (rotulosBrutos || []).forEach(r => { listaRotulos(r).forEach(rot => corDoRotulo(rot, mapa)); });
   return mapa;
 }
 
-/** Igual a anotarRotuloGenericoMultiplo, mas cada palavra JÁ REVELADA mostra o SEU PRÓPRIO rótulo
- * (não um rótulo único pra todo mundo) — só agrupa em um colchete se as palavras reveladas forem
- * adjacentes E tiverem o mesmo rótulo. Cada colchete usa a cor do seu rótulo. */
-function anotarRotulosMultiplos(wrap, indicesRevelados, rotulos, mapaCores) {
+/** Igual a anotarRotuloGenericoMultiplo, mas cada palavra JÁ REVELADA mostra o(s) SEU(S) PRÓPRIO(S)
+ * rótulo(s) (não um rótulo único pra todo mundo) — cada linha (linhaDoRotulo) só agrupa num
+ * colchete se as palavras reveladas forem adjacentes E tiverem o mesmo rótulo NESSA linha. Cada
+ * colchete usa a cor do seu rótulo. */
+function anotarRotulosMultiplos(wrap, indicesRevelados, rotulosBrutos, mapaCores, linhaDoRotulo) {
   const revelados = new Set(indicesRevelados);
-  const rotulosVisiveis = rotulos.map((r, i) => revelados.has(i) ? r : '');
-  agruparRotulos(rotulosVisiveis).forEach(g => {
-    wrap.insertAdjacentHTML('beforeend',
-      `<div class="anotacao-generica" style="grid-column:${g.inicio + 1}/span ${g.fim - g.inicio + 1};grid-row:2;color:${corDoRotulo(g.rotulo, mapaCores)}">${g.rotulo}</div>`);
+  const rotulosVisiveis = rotulosBrutos.map((r, i) => revelados.has(i) ? r : '');
+  porLinha(rotulosBrutos.length, rotulosVisiveis, linhaDoRotulo).forEach((linhaArr, linhaIdx) => {
+    agruparRotulos(linhaArr).forEach(g => {
+      wrap.insertAdjacentHTML('beforeend',
+        `<div class="anotacao-generica" style="grid-column:${g.inicio + 1}/span ${g.fim - g.inicio + 1};grid-row:${linhaIdx + 2};color:${corDoRotulo(g.rotulo, mapaCores)}">${g.rotulo}</div>`);
+    });
   });
 }
 
@@ -589,6 +629,7 @@ function renderPalavraMultiplosRotulos(ex, pmr, wrap) {
   const todasReveladas = indicesComRotulo.length > 0 && indicesComRotulo.every(idx => ex._reveladosPmr.includes(idx));
   btnProxima.disabled = !todasReveladas;
   const mapaCores = mapaCoresRotulos(pmr.rotulos);
+  const linhaDoRotulo = linhaPorRotulo(pmr.sentenca.length, pmr.rotulos);
 
   pmr.sentenca.forEach((palavra, idx) => {
     const btn = document.createElement('button');
@@ -602,10 +643,15 @@ function renderPalavraMultiplosRotulos(ex, pmr, wrap) {
       btn.disabled = true;
     } else if (jaRevelada) {
       btn.disabled = true;
-      const cor = corDoRotulo(pmr.rotulos[idx], mapaCores);
-      btn.style.borderColor = cor;
-      btn.style.background  = `${cor}1a`;
-      btn.style.color       = cor;
+      // Só colore a palavra se ela tiver um rótulo "de primeira linha" — quando o único rótulo
+      // dela é mais largo/embaixo (ex: só PREDICADO), fica sem cor própria, igual ao colchete.
+      const rotuloLinha0 = listaRotulos(pmr.rotulos[idx]).find(r => linhaDoRotulo.get(r) === 0);
+      if (rotuloLinha0) {
+        const cor = corDoRotulo(rotuloLinha0, mapaCores);
+        btn.style.borderColor = cor;
+        btn.style.background  = `${cor}1a`;
+        btn.style.color       = cor;
+      }
     } else if (todasReveladas) {
       btn.disabled = true;
     } else {
@@ -622,7 +668,7 @@ function renderPalavraMultiplosRotulos(ex, pmr, wrap) {
     wrap.appendChild(btn);
   });
 
-  if (ex._reveladosPmr.length) anotarRotulosMultiplos(wrap, ex._reveladosPmr, pmr.rotulos, mapaCores);
+  if (ex._reveladosPmr.length) anotarRotulosMultiplos(wrap, ex._reveladosPmr, pmr.rotulos, mapaCores, linhaDoRotulo);
 }
 
 // Passo de exemplo com mais de uma palavra clicável pro mesmo papel (ex:

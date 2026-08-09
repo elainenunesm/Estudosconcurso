@@ -13,7 +13,12 @@ const MODULOS = [
  * NIVEIS.JS — Agrupa etapas em ciclos.
  */
 const NIVEIS = [
-
+  {
+    id:          1,
+    titulo:      "dFd",
+    etapas:      [],
+    insigniaUrl: "",
+  }
 ];
 
 /**
