@@ -41,7 +41,7 @@ window.AULA_DATA = {
       rotulos: [
         "SUJEITO",
         "VERBO;PREDICADO",
-        ""
+        "COMPLEMENTO"
       ],
       instrucaoDestaque: []
     }
