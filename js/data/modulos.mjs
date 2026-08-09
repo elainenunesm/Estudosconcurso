@@ -6,19 +6,7 @@
  * exercícios, resumo) fica em js/data/questoes/aula-N.mjs.
  */
 const MODULOS = [
-  {
-    id:      1,
-    titulo:  "fwgw",
-    materia: "fwgw",
-    aulas: [
-      {
-        id:      1,
-        titulo:  "wgw",
-        arquivo: "aula-1",
-        icone:   'padrao',
-      }
-    ],
-  }
+
 ];
 
 /**
@@ -27,8 +15,8 @@ const MODULOS = [
 const NIVEIS = [
   {
     id:          1,
-    titulo:      "eqrqfq",
-    etapas:      [1],
+    titulo:      "Novo ciclo",
+    etapas:      [],
     insigniaUrl: "",
   }
 ];

@@ -394,12 +394,12 @@ function htmlCardAudio(a) {
   if (!a.audioUrl && !a.titulo && !a.subtitulo && !a.texto) return '';
   return `
       <div class="card-audio">
-        ${a.audioUrl ? `<audio class="card-audio-player" controls src="${a.audioUrl}"></audio>` : ''}
-        ${(a.titulo || a.subtitulo || a.texto) ? `<div class="card-audio-corpo">
+        ${(a.titulo || a.subtitulo) ? `<div class="card-audio-cabecalho">
           ${a.titulo ? `<p class="card-audio-titulo"${estiloTextoInline(a, 'titulo')}>${renderFraseComDestaque(a.titulo, a.tituloDestaque)}</p>` : ''}
           ${a.subtitulo ? `<p class="card-audio-subtitulo"${estiloTextoInline(a, 'subtitulo')}>${renderFraseComDestaque(a.subtitulo, a.subtituloDestaque)}</p>` : ''}
-          ${a.texto ? `<p class="card-audio-texto"${estiloTextoInline(a, 'texto')}>${renderFraseComDestaque(a.texto, a.textoDestaque)}</p>` : ''}
         </div>` : ''}
+        ${a.audioUrl ? `<audio class="card-audio-player" controls src="${a.audioUrl}"></audio>` : ''}
+        ${a.texto ? `<p class="card-audio-texto"${estiloTextoInline(a, 'texto')}>${renderFraseComDestaque(a.texto, a.textoDestaque)}</p>` : ''}
       </div>`;
 }
 
