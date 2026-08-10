@@ -20,9 +20,7 @@ window.AULA_DATA = {
   titulo: "teste",
   descricao: "",
   aprender: "",
-  importancia: "",
-  tituloDestaque: [],
-  tituloDestaqueNegrito: []
+  importancia: ""
 },
 
   exemplo: [],
