@@ -190,7 +190,9 @@ window.AULA_DATA = {
     dificuldade: "Fácil",
     subtitulo: "O verbo em destaque indica:",
     subtituloDestaque: [],
-    tituloDestaque: []
+    tituloDestaque: [
+      2
+    ]
   }
 ],
 
