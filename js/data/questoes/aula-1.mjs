@@ -40,7 +40,12 @@ window.AULA_DATA = {
     textoDestaque: [
       6,
       8,
-      10
+      10,
+      11,
+      12,
+      14,
+      15,
+      16
     ],
     textoAlinhamento: "centro",
     textoNegrito: true
