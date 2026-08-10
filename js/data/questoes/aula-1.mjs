@@ -178,7 +178,7 @@ window.AULA_DATA = {
     titulo: "\"O cachorro correu pelo jardim.\"",
     correta: 0,
     feedbackCorreto: "Correto!\n\"Correu\" indica uma ação — um movimento realizado pelo cachorro.",
-    feedbackErrado: "Incorreto.\n\"Correu\" indica uma ação — um movimento realizado pelo cachorro.\nAlternativa A é a correta.",
+    feedbackErrado: "Incorreto.\n\"Correu\" indica uma ação — um movimento realizado pelo cachorro.\n\nAlternativa A é a correta.",
     opcoes: [
       "Ação.",
       "Fenomeno da natureza.",
