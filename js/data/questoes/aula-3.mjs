@@ -196,11 +196,17 @@ window.AULA_DATA = {
     feedbackErrado: "",
     opcoes: [
       "Todo cidadão possui esse poder.",
+      "O guarda pode fazer tudo que considerar necessário.",
       ""
     ],
-    opcoesNegrito: [],
-    opcoesItalico: [],
+    opcoesNegrito: [
+      false
+    ],
+    opcoesItalico: [
+      false
+    ],
     opcoesDestaque: [
+      [],
       [],
       []
     ],
