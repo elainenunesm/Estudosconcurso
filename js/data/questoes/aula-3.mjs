@@ -73,10 +73,10 @@ window.AULA_DATA = {
     titulo: "",
     itens: [
       {
-        tipo: "acao",
+        tipo: "livro",
         cor: "#5B2BCB",
         corFundo: "#f0eaff",
-        texto: ""
+        texto: "gagagsg"
       }
     ],
     descricao: ""
