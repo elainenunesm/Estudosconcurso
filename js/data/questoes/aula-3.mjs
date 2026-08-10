@@ -228,8 +228,8 @@ window.AULA_DATA = {
     feedbackCorreto: "",
     feedbackErrado: "",
     opcoes: [
-      "",
-      ""
+      "Concede poderes à Administração Pública, mas não estabelece limitações.",
+      "Estabelece apenas obrigações para os agentes públicos."
     ],
     opcoesNegrito: [],
     opcoesItalico: [],
