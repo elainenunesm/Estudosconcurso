@@ -16,6 +16,7 @@ window.AULA_DATA = {
   "exemplo1",
   "exemplo2",
   "exemplo3",
+  "exemplo4",
   "resumo",
   "licao"
 ],
@@ -94,6 +95,14 @@ window.AULA_DATA = {
       3
     ],
     obsNegrito: true
+  },
+  {
+    tipo: "mudanca",
+    texto: "Ao ouvir a palavra ficou, imaginamos alguém que alterou o seu estado original.",
+    conclusao: "",
+    obs: "",
+    pontos: [],
+    textoDestaque: []
   }
 ],
 
