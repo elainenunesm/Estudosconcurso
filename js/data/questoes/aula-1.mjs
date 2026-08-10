@@ -251,7 +251,9 @@ window.AULA_DATA = {
     ],
     invertido: false,
     dificuldade: "Fácil",
-    subtituloDestaque: [],
+    subtituloDestaque: [
+      2
+    ],
     tituloDestaque: [],
     subtitulo: "\"O garoto cresceu cinco centímetros em seis meses.\"",
     tituloNegrito: true
