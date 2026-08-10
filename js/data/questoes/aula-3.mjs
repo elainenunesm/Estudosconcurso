@@ -12,7 +12,8 @@ window.AULA_DATA = {
   // Ordem das telas na sequência de estudo — definida em "Estrutura das telas".
   ordem: [
   "antesComecar",
-  "exemplo0"
+  "exemplo0",
+  "lista"
 ],
 
   antesComecar: {
@@ -66,6 +67,8 @@ window.AULA_DATA = {
     titulo: "",
     html: ``,
   },
+
+  lista: '',
 
   questoes: [],
 };

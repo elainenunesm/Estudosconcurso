@@ -22,7 +22,8 @@ window.AULA_DATA = {
   "checagem1",
   "checagem2",
   "checagem3",
-  "checagem4"
+  "checagem4",
+  "lista"
 ],
 
   antesComecar: {
@@ -354,6 +355,8 @@ window.AULA_DATA = {
     titulo: "",
     html: ``,
   },
+
+  lista: '',
 
   questoes: [],
 };

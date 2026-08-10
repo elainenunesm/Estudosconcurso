@@ -1025,6 +1025,20 @@ body {
   color: #64748b;
 }
 
+/* TELA DE LISTA — mesmo cartão do resumo, mas cada item é uma linha só (ícone +
+   texto, sem título/exemplos separados) e uma descrição livre depois da lista. */
+.lista-item-texto {
+  font-size: 16px;
+  color: #1a1a2e;
+}
+
+.lista-descricao {
+  font-size: 16px;
+  color: #4b5563;
+  line-height: 1.6;
+  text-align: justify;
+}
+
 /* TELA DE IDENTIFICAÇÃO */
 .idf-card {
   display: flex;

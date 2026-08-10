@@ -1217,6 +1217,36 @@ function mostrarResumo(aula, introIdx) {
   atualizarScrollFade();
 }
 
+function mostrarLista(aula, introIdx) {
+  const li = aula.lista || {};
+  questaoInfo.textContent      = aula.titulo;
+  feedbackBar.style.display    = 'none';
+  btnAnterior.style.display    = '';
+  renderIntroSegs(introIdx - 1);
+  questaoTitulo.innerHTML      = '';
+  questaoSubtitulo.textContent = '';
+  opcoesEl.innerHTML = `
+    <div class="resumo-card">
+      ${marcarCartaoHtml('lista')}
+      ${li.titulo ? `<p class="resumo-titulo"${estiloTextoInline(li, 'titulo')}>${renderFraseComDestaque(li.titulo || '', li.tituloDestaque, li.tituloDestaqueNegrito)}</p>` : ''}
+      ${(li.itens || []).map(item => `
+      <div class="resumo-item">
+        <div class="resumo-icone" style="background:${item.corFundo}">
+          <svg viewBox="0 0 24 24" width="26" height="26">
+            ${iconeExternoOuNulo(item) || (RESUMO_ICONES[item.tipo] ? RESUMO_ICONES[item.tipo](item.cor) : '')}
+          </svg>
+        </div>
+        <span class="lista-item-texto"${estiloTextoInline(item, 'texto')}>${renderFraseComDestaque(item.texto || '', item.textoDestaque, item.textoDestaqueNegrito)}</span>
+      </div>`).join('')}
+      ${li.descricao ? `<p class="lista-descricao"${estiloTextoInline(li, 'descricao')}>${renderFraseComDestaque(li.descricao, li.descricaoDestaque, li.descricaoDestaqueNegrito)}</p>` : ''}
+    </div>`;
+  ativarBotaoMarcar();
+  btnProxima.innerHTML = 'Próximo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><polyline points="9 18 15 12 9 6"></polyline></svg>';
+  btnProxima.disabled  = false;
+  questaoArea.scrollTop = 0;
+  atualizarScrollFade();
+}
+
 function mostrarLicao(aula, introIdx) {
   const lic = aula.licao || {};
   questaoInfo.textContent      = aula.titulo;
@@ -2508,7 +2538,7 @@ carregarDadosIniciais().then((carregado) => {
     Object.assign(introFns, {
       justificativa: mostrarIntro, infinitivo: mostrarInfinitivo, resumo: mostrarResumo,
       identificacao: mostrarIdentificacao, sentido: mostrarSentido, licao: mostrarLicao,
-      definicao: mostrarDefinicao, contexto: mostrarContexto,
+      definicao: mostrarDefinicao, contexto: mostrarContexto, lista: mostrarLista,
     });
     (aula.exemplo || []).forEach((_, i) => { introFns[`exemplo${i}`] = (a, idx) => mostrarExemplo(a, idx, i); });
     (aula.checagem || []).forEach((dados, i) => { introFns[`checagem${i}`] = (a, idx) => mostrarChecagem(a, idx, dados, i); });
