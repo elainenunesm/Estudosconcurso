@@ -200,7 +200,7 @@ window.AULA_DATA = {
       []
     ],
     dificuldade: "Fácil",
-    subtitulo: "O verbo em destaque indica:",
+    subtitulo: "\"O cachorro correu pelo jardim.\"",
     subtituloDestaque: [],
     tituloDestaque: [
       2
