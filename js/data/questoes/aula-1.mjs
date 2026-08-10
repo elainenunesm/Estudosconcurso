@@ -235,7 +235,7 @@ window.AULA_DATA = {
     subtitulo: "\"Ana está muito animada com a viagem.\""
   },
   {
-    titulo: "",
+    titulo: "O verbo em destaque indica:",
     correta: 0,
     feedbackCorreto: "",
     feedbackErrado: "",
@@ -251,7 +251,9 @@ window.AULA_DATA = {
     ],
     invertido: false,
     dificuldade: "Fácil",
-    subtituloDestaque: []
+    subtituloDestaque: [],
+    tituloDestaque: [],
+    subtitulo: "\"O garoto cresceu cinco centímetros em seis meses.\""
   }
 ],
 
