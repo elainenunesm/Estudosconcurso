@@ -78,11 +78,13 @@ window.AULA_DATA = {
   {
     tipo: "gota",
     texto: "Exemplo: a palavra bebeu.",
-    conclusao: "",
+    conclusao: "Bebeu --> Beb + er (Terminação er indica infinitivo) 2º conjugação.",
     obs: "",
     pontos: [],
     textoDestaque: [],
-    textoDestaqueNegrito: []
+    textoDestaqueNegrito: [],
+    conclusaoDestaque: [],
+    conclusaoDestaqueNegrito: []
   }
 ],
 
