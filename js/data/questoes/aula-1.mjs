@@ -241,11 +241,17 @@ window.AULA_DATA = {
     feedbackErrado: "",
     opcoes: [
       "Ação",
-      "Estado"
+      "Estado",
+      "Mudança de estaf"
     ],
-    opcoesNegrito: [],
-    opcoesItalico: [],
+    opcoesNegrito: [
+      false
+    ],
+    opcoesItalico: [
+      false
+    ],
     opcoesDestaque: [
+      [],
       [],
       []
     ],
