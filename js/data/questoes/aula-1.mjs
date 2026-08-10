@@ -82,9 +82,13 @@ window.AULA_DATA = {
     tipo: "estado",
     texto: "Ao ouvir a palavra estou, imaginamos alguém que permanece de uma determinada forma e não ouve mudança.",
     conclusao: "",
-    obs: "",
+    obs: "Isso representa um estado.",
     pontos: [],
-    textoDestaque: []
+    textoDestaque: [],
+    obsDestaque: [
+      3
+    ],
+    obsNegrito: true
   }
 ],
 
