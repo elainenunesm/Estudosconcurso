@@ -58,7 +58,7 @@ window.AULA_DATA = {
   },
   {
     tipo: "externo",
-    texto: "\nImagine um guarda de trânsito.\n\nVocê(cidadão) pode aplicar uma multa? ❌ Não.\nO guarda( pode? ✅ Sim.\n\n\nIsso acontece porque a lei concedeu esse poder ao agente público.",
+    texto: "\nImagine um guarda de trânsito.\n\nVocê(cidadão) pode aplicar uma multa? ❌ Não.\nO guarda(agente público) pode? ✅ Sim.\n\n\nIsso acontece porque a lei concedeu esse poder ao agente público.",
     conclusao: "",
     obs: "",
     pontos: [],
