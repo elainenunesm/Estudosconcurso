@@ -19,11 +19,12 @@ window.AULA_DATA = {
   antesComecar: {
   titulo: "Aprenda o que é o verbo",
   descricao: "Nesta aula você vai dar o primeiro passo para entender a estrutura das frases.",
-  aprender: "",
-  importancia: "",
+  aprender: "Nesta aula você aprenderá a identificar o verbo em frases simples.",
+  importancia: "Saber identificar o verbo ajuda a compreender a frase e facilita encontrar o sujeito.",
   tituloDestaque: [],
   descricaoDestaque: [],
-  tituloNegrito: true
+  tituloNegrito: true,
+  aprenderDestaque: []
 },
 
   exemplo: [],
