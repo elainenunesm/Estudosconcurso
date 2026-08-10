@@ -140,13 +140,15 @@ window.AULA_DATA = {
       9,
       10,
       14,
-      15
+      15,
+      17
     ],
     obsDestaqueNegrito: [
       9,
       10,
       14,
-      15
+      15,
+      17
     ]
   }
 ],
