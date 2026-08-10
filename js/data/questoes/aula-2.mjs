@@ -299,15 +299,46 @@ window.AULA_DATA = {
   },
   {
     titulo: "Clique no verbo da frase:",
-    correta: 0,
+    correta: 2,
     feedbackCorreto: "Correto!\n\"Pôs\" é o verbo — vem de pôr, um verbo irregular (antigamente escrito \"poer\", por isso é da 2ª conjugação).",
     feedbackErrado: "Incorreto!\n\"Pôs\" é o verbo — vem de pôr, um verbo irregular (antigamente escrito \"poer\", por isso é da 2ª conjugação).",
-    sentenca: [],
-    classes: [],
+    sentenca: [
+      "A",
+      "professora",
+      "pôs",
+      "o",
+      "livro",
+      "na",
+      "mesa",
+      "."
+    ],
+    classes: [
+      {
+        classe: ""
+      },
+      {
+        classe: ""
+      },
+      {
+        classe: "Ve"
+      },
+      {
+        classe: ""
+      },
+      {
+        classe: ""
+      },
+      {
+        classe: ""
+      },
+      {
+        classe: ""
+      }
+    ],
     tituloDestaque: [],
     tituloDestaqueNegrito: [],
     tituloNegrito: true,
-    subtitulo: "A professora pôs o livro na mesa.",
+    subtitulo: "",
     subtituloDestaque: [],
     subtituloDestaqueNegrito: []
   }
