@@ -36,11 +36,13 @@ window.AULA_DATA = {
   {
     tipo: "dica",
     texto: "Toda atuação da Administração Pública deve buscar o interesse da sociedade.",
-    conclusao: "",
+    conclusao: "Esse é o objetivo do Direito Administrativo.",
     obs: "",
     pontos: [],
     textoDestaque: [],
-    textoDestaqueNegrito: []
+    textoDestaqueNegrito: [],
+    conclusaoDestaque: [],
+    conclusaoDestaqueNegrito: []
   }
 ],
 
