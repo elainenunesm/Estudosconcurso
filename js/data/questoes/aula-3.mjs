@@ -81,10 +81,10 @@ window.AULA_DATA = {
         textoDestaqueNegrito: []
       },
       {
-        tipo: "livro",
+        tipo: "tarefa",
         cor: "#5B2BCB",
         corFundo: "#f0eaff",
-        texto: "vasvadvad",
+        texto: "Construir escolas.",
         textoDestaque: [],
         textoDestaqueNegrito: []
       }
