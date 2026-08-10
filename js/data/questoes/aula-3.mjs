@@ -134,7 +134,15 @@ window.AULA_DATA = {
         tipo: "tarefa",
         cor: "#5B2BCB",
         corFundo: "#f0eaff",
-        texto: ""
+        texto: "✅ Reformar uma escola.",
+        textoDestaque: [],
+        textoDestaqueNegrito: []
+      },
+      {
+        tipo: "tarefa",
+        cor: "#5B2BCB",
+        corFundo: "#f0eaff",
+        texto: "✅ Pavimentar uma rua."
       }
     ],
     descricao: "",
