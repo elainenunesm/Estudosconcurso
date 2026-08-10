@@ -100,7 +100,7 @@ window.AULA_DATA = {
     conclusaoNegrito: true
   },
   {
-    tipo: "acao",
+    tipo: "foguete",
     texto: "Exemplo: a palavra partiu.",
     conclusao: "",
     obs: "",
