@@ -140,12 +140,12 @@ window.AULA_DATA = {
   checagem: [
   {
     titulo: "O que é um verbo?",
-    correta: 0,
+    correta: 1,
     feedbackCorreto: "",
     feedbackErrado: "",
     opcoes: [
       "A palavra que dá nome as pessoas, lugares ou coisas.",
-      "",
+      "A palavra que ",
       ""
     ],
     opcoesNegrito: [
