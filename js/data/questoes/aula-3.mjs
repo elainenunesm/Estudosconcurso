@@ -58,10 +58,12 @@ window.AULA_DATA = {
   },
   {
     tipo: "pergunta",
-    texto: "",
+    texto: "Para realizar essas atividades, a lei concede alguns poderes especiais à Administração Pública.",
     conclusao: "",
     obs: "",
-    pontos: []
+    pontos: [],
+    textoDestaque: [],
+    textoDestaqueNegrito: []
   }
 ],
 
