@@ -125,7 +125,12 @@ window.AULA_DATA = {
     textoDestaque: [
       4
     ],
-    obsDestaque: []
+    obsDestaque: [
+      3,
+      4,
+      5
+    ],
+    obsNegrito: true
   }
 ],
 
