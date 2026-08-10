@@ -1217,8 +1217,8 @@ function mostrarResumo(aula, introIdx) {
   atualizarScrollFade();
 }
 
-function mostrarLista(aula, introIdx) {
-  const li = aula.lista || {};
+function mostrarLista(aula, introIdx, i) {
+  const li = (aula.lista || [])[i] || {};
   questaoInfo.textContent      = aula.titulo;
   feedbackBar.style.display    = 'none';
   btnAnterior.style.display    = '';
@@ -1227,7 +1227,7 @@ function mostrarLista(aula, introIdx) {
   questaoSubtitulo.textContent = '';
   opcoesEl.innerHTML = `
     <div class="resumo-card">
-      ${marcarCartaoHtml('lista')}
+      ${marcarCartaoHtml(`lista${i}`)}
       ${li.titulo ? `<p class="resumo-titulo"${estiloTextoInline(li, 'titulo')}>${renderFraseComDestaque(li.titulo || '', li.tituloDestaque, li.tituloDestaqueNegrito)}</p>` : ''}
       ${(li.itens || []).map(item => `
       <div class="resumo-item">
@@ -2538,10 +2538,11 @@ carregarDadosIniciais().then((carregado) => {
     Object.assign(introFns, {
       justificativa: mostrarIntro, infinitivo: mostrarInfinitivo, resumo: mostrarResumo,
       identificacao: mostrarIdentificacao, sentido: mostrarSentido, licao: mostrarLicao,
-      definicao: mostrarDefinicao, contexto: mostrarContexto, lista: mostrarLista,
+      definicao: mostrarDefinicao, contexto: mostrarContexto,
     });
     (aula.exemplo || []).forEach((_, i) => { introFns[`exemplo${i}`] = (a, idx) => mostrarExemplo(a, idx, i); });
     (aula.checagem || []).forEach((dados, i) => { introFns[`checagem${i}`] = (a, idx) => mostrarChecagem(a, idx, dados, i); });
+    (aula.lista || []).forEach((_, i) => { introFns[`lista${i}`] = (a, idx) => mostrarLista(a, idx, i); });
     aula.ordem.forEach(token => {
       const chave = token === 'antesComecar' ? 'justificativa' : token;
       if (introFns[chave]) introScreens.push(chave);
