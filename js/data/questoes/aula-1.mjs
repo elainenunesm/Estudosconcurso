@@ -146,7 +146,7 @@ window.AULA_DATA = {
     opcoes: [
       "A palavra que dá nome as pessoas, lugares ou coisas.",
       "A palavra que expressa ação, estado, mudança de estado ou fenomeno da natureza.",
-      ""
+      "A palavra "
     ],
     opcoesNegrito: [
       false
