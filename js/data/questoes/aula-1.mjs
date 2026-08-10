@@ -139,7 +139,7 @@ window.AULA_DATA = {
 
   checagem: [
   {
-    titulo: "",
+    titulo: "O que é um verbo?",
     correta: 0,
     feedbackCorreto: "",
     feedbackErrado: "",
@@ -154,7 +154,10 @@ window.AULA_DATA = {
       []
     ],
     dificuldade: "Fácil",
-    subtituloDestaque: []
+    subtituloDestaque: [],
+    tituloDestaque: [],
+    tituloNegrito: true,
+    subtitulo: "Escolha a definição correta."
   }
 ],
 
