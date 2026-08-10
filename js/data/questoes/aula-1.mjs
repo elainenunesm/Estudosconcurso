@@ -57,7 +57,9 @@ window.AULA_DATA = {
     conclusao: "",
     obs: "Oração é toda frase que possui um verbo.",
     pontos: [],
-    textoDestaque: [],
+    textoDestaque: [
+      16
+    ],
     obsDestaque: [],
     conclusaoDestaque: [],
     obsNegrito: true
