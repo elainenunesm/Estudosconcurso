@@ -55,11 +55,13 @@ window.AULA_DATA = {
   {
     tipo: "conjugar",
     texto: "Exemplo: a palavra cantou.",
-    conclusao: "",
+    conclusao: "Cantou --> Cant + ar (Terminação ar indica infinitivo) 1º conjugação.",
     obs: "",
     pontos: [],
     textoDestaque: [],
-    textoDestaqueNegrito: []
+    textoDestaqueNegrito: [],
+    conclusaoDestaque: [],
+    conclusaoDestaqueNegrito: []
   }
 ],
 
