@@ -16,6 +16,12 @@ const MODULOS = [
         titulo:  "Aula 1: Aprenda o que é o verbo",
         arquivo: "aula-1",
         icone:   'padrao',
+      },
+      {
+        id:      2,
+        titulo:  "Aula 2: Como reconhecer o verbo na oração?",
+        arquivo: "aula-2",
+        icone:   'padrao',
       }
     ],
   }
