@@ -84,9 +84,15 @@ window.AULA_DATA = {
         tipo: "tarefa",
         cor: "#5B2BCB",
         corFundo: "#f0eaff",
-        texto: "Construir escolas.",
+        texto: "Manter hospitais.",
         textoDestaque: [],
         textoDestaqueNegrito: []
+      },
+      {
+        tipo: "acao",
+        cor: "#5B2BCB",
+        corFundo: "#f0eaff",
+        texto: ""
       }
     ],
     descricao: "egwsswgsges",
