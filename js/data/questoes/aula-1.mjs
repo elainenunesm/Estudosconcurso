@@ -303,7 +303,11 @@ window.AULA_DATA = {
     ],
     tituloDestaque: [],
     subtitulo: "\"O garoto cresceu cinco centímetros em seis meses.\"",
-    tituloNegrito: true
+    tituloNegrito: true,
+    tituloDestaqueNegrito: [],
+    subtituloDestaqueNegrito: [
+      2
+    ]
   },
   {
     titulo: "O verbo em destaque indica:",
