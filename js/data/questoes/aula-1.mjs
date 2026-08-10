@@ -19,6 +19,7 @@ window.AULA_DATA = {
   "exemplo4",
   "exemplo5",
   "checagem0",
+  "checagem1",
   "resumo",
   "licao"
 ],
@@ -170,6 +171,25 @@ window.AULA_DATA = {
     subtitulo: "Escolha a definição correta.",
     subtituloNegrito: true,
     invertido: true
+  },
+  {
+    titulo: "",
+    correta: 0,
+    feedbackCorreto: "",
+    feedbackErrado: "",
+    opcoes: [
+      "",
+      ""
+    ],
+    opcoesNegrito: [],
+    opcoesItalico: [],
+    opcoesDestaque: [
+      [],
+      []
+    ],
+    dificuldade: "Fácil",
+    subtitulo: "O verbo em destaque indica:",
+    subtituloDestaque: []
   }
 ],
 
