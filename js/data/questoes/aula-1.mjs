@@ -13,6 +13,7 @@ window.AULA_DATA = {
   ordem: [
   "antesComecar",
   "exemplo0",
+  "exemplo1",
   "resumo",
   "licao"
 ],
@@ -49,6 +50,13 @@ window.AULA_DATA = {
     ],
     textoAlinhamento: "centro",
     textoNegrito: true
+  },
+  {
+    tipo: "busca",
+    texto: "Ao ler uma frase ou texto, uma das primeiras coisas que devemos procurar é o verbo, pois é ele quem dá movimento e sentido à oração.",
+    conclusao: "",
+    obs: "",
+    pontos: []
   }
 ],
 
