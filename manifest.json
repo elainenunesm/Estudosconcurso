@@ -1,6 +1,6 @@
 {
-  "name": "Metodo Feyman",
-  "short_name": "Metodo Feyman",
+  "name": "Método Feyman",
+  "short_name": "Método Feyman",
   "description": "Gerando aulas com o que eu aprendo.",
   "start_url": "./index.html",
   "scope": "./",
