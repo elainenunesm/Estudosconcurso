@@ -217,7 +217,7 @@ window.AULA_DATA = {
         classe: ""
       },
       {
-        classe: ""
+        classe: "Verbo"
       },
       {
         classe: ""
