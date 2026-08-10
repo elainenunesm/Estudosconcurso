@@ -67,7 +67,8 @@ window.AULA_DATA = {
       32,
       7,
       21,
-      20
+      20,
+      25
     ],
     textoDestaqueNegrito: [
       27,
