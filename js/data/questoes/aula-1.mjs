@@ -6,7 +6,7 @@
  */
 window.AULA_DATA = {
   id:     1,
-  modulo: "aqui 2",
+  modulo: "Português",
   titulo: "aqui3",
 
   // Ordem das telas na sequência de estudo — definida em "Estrutura das telas".
