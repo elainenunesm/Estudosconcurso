@@ -16,7 +16,8 @@ window.AULA_DATA = {
   "exemplo0",
   "lista1",
   "exemplo1",
-  "exemplo2"
+  "exemplo2",
+  "checagem0"
 ],
 
   antesComecar: {
@@ -153,7 +154,25 @@ window.AULA_DATA = {
   }
 ],
 
-  checagem: [],
+  checagem: [
+  {
+    titulo: "",
+    correta: 0,
+    feedbackCorreto: "",
+    feedbackErrado: "",
+    opcoes: [
+      "",
+      ""
+    ],
+    opcoesNegrito: [],
+    opcoesItalico: [],
+    opcoesDestaque: [
+      [],
+      []
+    ],
+    dificuldade: "Fácil"
+  }
+],
 
   resumo: {
   titulo: "",
