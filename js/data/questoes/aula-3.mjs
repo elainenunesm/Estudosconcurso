@@ -177,7 +177,7 @@ window.AULA_DATA = {
         textoDestaqueNegrito: []
       }
     ],
-    descricao: "",
+    descricao: "Para realizar essas atividades, a lei concede alguns poderes especiais à Administração Pública.",
     tituloDestaque: [
       5,
       6
