@@ -17,6 +17,7 @@ window.AULA_DATA = {
   "exemplo2",
   "exemplo3",
   "exemplo4",
+  "exemplo5",
   "resumo",
   "licao"
 ],
@@ -114,6 +115,14 @@ window.AULA_DATA = {
       5
     ],
     obsNegrito: true
+  },
+  {
+    tipo: "fenomeno",
+    texto: "Ao ouvir a palavra amanheceu, imaginamos um fenômeno que independe de ação humana, simplesmente acontece.",
+    conclusao: "",
+    obs: "",
+    pontos: [],
+    textoDestaque: []
   }
 ],
 
