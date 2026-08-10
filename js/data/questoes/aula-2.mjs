@@ -355,7 +355,11 @@ window.AULA_DATA = {
     html: ``,
   },
 
-  lista: '',
+  lista: {
+  titulo: "",
+  itens: [],
+  descricao: ""
+},
 
   questoes: [],
 };
