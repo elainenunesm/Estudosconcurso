@@ -102,11 +102,16 @@ window.AULA_DATA = {
   {
     tipo: "foguete",
     texto: "Exemplo: a palavra partiu.",
-    conclusao: "",
+    conclusao: "Partiu --> Part + ir (Terminação ir indica infinitivo) 3º conjugação.",
     obs: "",
     pontos: [],
-    textoDestaque: [],
-    textoDestaqueNegrito: []
+    textoDestaque: [
+      4
+    ],
+    textoDestaqueNegrito: [],
+    conclusaoDestaque: [],
+    conclusaoDestaqueNegrito: [],
+    conclusaoNegrito: true
   }
 ],
 
