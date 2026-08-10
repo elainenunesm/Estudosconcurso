@@ -205,7 +205,8 @@ window.AULA_DATA = {
     tituloDestaque: [
       2
     ],
-    invertido: true
+    invertido: true,
+    subtituloNegrito: true
   },
   {
     titulo: "O verbo em destaque indica:",
