@@ -117,7 +117,13 @@ window.AULA_DATA = {
     obsDestaque: [
       3
     ],
-    obsNegrito: true
+    obsNegrito: true,
+    textoDestaqueNegrito: [
+      4,
+      15,
+      16,
+      17
+    ]
   },
   {
     tipo: "mudanca",
