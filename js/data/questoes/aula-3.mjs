@@ -89,7 +89,7 @@ window.AULA_DATA = {
         textoDestaqueNegrito: []
       },
       {
-        tipo: "acao",
+        tipo: "tarefa",
         cor: "#5B2BCB",
         corFundo: "#f0eaff",
         texto: ""
