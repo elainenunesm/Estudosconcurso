@@ -145,7 +145,7 @@ window.AULA_DATA = {
     feedbackErrado: "",
     opcoes: [
       "A palavra que dá nome as pessoas, lugares ou coisas.",
-      "A palavra que expressa ação,",
+      "A palavra que expressa ação, estado, ",
       ""
     ],
     opcoesNegrito: [
