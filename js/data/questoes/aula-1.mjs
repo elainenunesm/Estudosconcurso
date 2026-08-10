@@ -208,7 +208,7 @@ window.AULA_DATA = {
   {
     titulo: "O verbo em destaque indica:",
     correta: 0,
-    feedbackCorreto: "",
+    feedbackCorreto: "Correto!\n\"Está\" indica um estado — uma forma em que Ana permanece, sem mudança.",
     feedbackErrado: "",
     opcoes: [
       "",
