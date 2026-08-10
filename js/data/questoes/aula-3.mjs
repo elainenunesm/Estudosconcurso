@@ -163,15 +163,19 @@ window.AULA_DATA = {
     opcoes: [
       "Aumentar os poderes dos agentes públicos.",
       "Organizar o funcionamento da Administração Pública e orientar sua atuação em benefício da sociedade.",
-      "Criar regras apenas para servidores públicos."
+      "Criar regras apenas para servidores públicos.",
+      "Permitir que o Estado atue sem limitações."
     ],
     opcoesNegrito: [
+      false,
       false
     ],
     opcoesItalico: [
+      false,
       false
     ],
     opcoesDestaque: [
+      [],
       [],
       [],
       []
