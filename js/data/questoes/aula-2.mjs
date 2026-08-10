@@ -199,7 +199,7 @@ window.AULA_DATA = {
   {
     titulo: "Clique no verbo da frase:",
     correta: 2,
-    feedbackCorreto: "Incorreto.\n\"Dormiu\" é o verbo — vem de dormir, infinitivo terminado em -ir (3ª conjugação).",
+    feedbackCorreto: "Correto.\n\"Dormiu\" é o verbo — vem de dormir, infinitivo terminado em -ir (3ª conjugação).",
     feedbackErrado: "Incorreto.\n\"Dormiu\" é o verbo — vem de dormir, infinitivo terminado em -ir (3ª conjugação).",
     sentenca: [
       "O",
