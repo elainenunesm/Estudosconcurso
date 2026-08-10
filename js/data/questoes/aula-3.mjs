@@ -19,12 +19,14 @@ window.AULA_DATA = {
   antesComecar: {
   titulo: "O que é Direito Administrativo?",
   descricao: "Nesta aula você vai entender o que é o Direito Administrativo, qual o seu objetivo e o que é o Regime Jurídico Administrativo.",
-  aprender: "",
+  aprender: "O que é Direito Administrativo, seu objetivo, o que é interesse público, por que a Administração tem poderes diferentes, o que é o Regime Jurídico Administrativo, o que são prerrogativas e os princípios da supremacia e da indisponibilidade do interesse público.",
   importancia: "",
   tituloDestaque: [],
   tituloDestaqueNegrito: [],
   descricaoDestaque: [],
-  descricaoDestaqueNegrito: []
+  descricaoDestaqueNegrito: [],
+  aprenderDestaque: [],
+  aprenderDestaqueNegrito: []
 },
 
   exemplo: [],
