@@ -242,7 +242,7 @@ window.AULA_DATA = {
     opcoes: [
       "Ação",
       "Estado",
-      "Mudança de estado",
+      "Mudança de estado.",
       "Fenômeno da Netureza."
     ],
     opcoesNegrito: [
