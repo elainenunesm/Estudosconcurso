@@ -20,7 +20,7 @@ window.AULA_DATA = {
   titulo: "Como reconhecer o verbo na oração?",
   descricao: "Nesta aula você vai aprender técnicas simples para encontrar o verbo em qualquer frase.",
   aprender: "Nesta aula você aprenderá a reconhecer o verbo colocando a palavra no infinitivo e observando o sentido que ela transmite na oração.",
-  importancia: "",
+  importancia: "Encontrar o verbo é o primeiro passo para entender a estrutura da frase e identificar sujeito e predicado.",
   tituloDestaque: [],
   tituloDestaqueNegrito: [],
   descricaoDestaque: [],
@@ -28,7 +28,9 @@ window.AULA_DATA = {
   tituloNegrito: true,
   tituloAlinhamento: "esquerda",
   aprenderDestaque: [],
-  aprenderDestaqueNegrito: []
+  aprenderDestaqueNegrito: [],
+  importanciaDestaque: [],
+  importanciaDestaqueNegrito: []
 },
 
   exemplo: [],
