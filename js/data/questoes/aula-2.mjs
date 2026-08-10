@@ -53,7 +53,7 @@ window.AULA_DATA = {
     ]
   },
   {
-    tipo: "acao",
+    tipo: "conjugar",
     texto: "Exemplo: a palavra cantou.",
     conclusao: "",
     obs: "",
