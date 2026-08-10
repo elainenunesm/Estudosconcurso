@@ -145,11 +145,17 @@ window.AULA_DATA = {
     feedbackErrado: "",
     opcoes: [
       "A palavra ",
+      "",
       ""
     ],
-    opcoesNegrito: [],
-    opcoesItalico: [],
+    opcoesNegrito: [
+      false
+    ],
+    opcoesItalico: [
+      false
+    ],
     opcoesDestaque: [
+      [],
       [],
       []
     ],
