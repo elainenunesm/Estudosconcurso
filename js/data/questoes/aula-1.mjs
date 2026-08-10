@@ -17,10 +17,11 @@ window.AULA_DATA = {
 ],
 
   antesComecar: {
-  titulo: "",
-  descricao: "",
+  titulo: "Aprenda o que é o verbo",
+  descricao: "Nesta aula você vai dar o primeiro passo para entender a estrutura das frases.",
   aprender: "",
-  importancia: ""
+  importancia: "",
+  tituloDestaque: []
 },
 
   exemplo: [],
