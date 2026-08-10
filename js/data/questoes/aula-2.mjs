@@ -12,6 +12,7 @@ window.AULA_DATA = {
   // Ordem das telas na sequência de estudo — definida em "Estrutura das telas".
   ordem: [
   "antesComecar",
+  "exemplo0",
   "resumo",
   "licao"
 ],
@@ -34,7 +35,17 @@ window.AULA_DATA = {
   descricaoAlinhamento: "esquerda"
 },
 
-  exemplo: [],
+  exemplo: [
+  {
+    tipo: "infinito",
+    texto: "Uma maneira de identificar o verbo é transformar ele no infinitivo.",
+    conclusao: "",
+    obs: "",
+    pontos: [],
+    textoDestaque: [],
+    textoDestaqueNegrito: []
+  }
+],
 
   checagem: [],
 

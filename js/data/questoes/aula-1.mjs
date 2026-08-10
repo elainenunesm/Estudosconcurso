@@ -22,9 +22,7 @@ window.AULA_DATA = {
   "checagem1",
   "checagem2",
   "checagem3",
-  "checagem4",
-  "resumo",
-  "licao"
+  "checagem4"
 ],
 
   antesComecar: {
