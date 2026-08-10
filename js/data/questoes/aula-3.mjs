@@ -76,7 +76,7 @@ window.AULA_DATA = {
         tipo: "livro",
         cor: "#5B2BCB",
         corFundo: "#f0eaff",
-        texto: "gagagsg",
+        texto: "Construir escolas.",
         textoDestaque: [],
         textoDestaqueNegrito: []
       },
