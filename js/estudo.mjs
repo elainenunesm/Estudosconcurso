@@ -840,7 +840,11 @@ function mostrarExemplo(aula, introIdx, i) {
       </div>
       ${ex.texto ? `<p class="exemplo-texto"${estiloTextoInline(ex, 'texto')}>${renderFraseComDestaque(ex.texto, ex.textoDestaque)}</p>` : ''}
       ${ex.conclusao ? `<p class="exemplo-conclusao"${estiloTextoInline(ex, 'conclusao')}>${renderFraseComDestaque(ex.conclusao, ex.conclusaoDestaque)}</p>` : ''}
-      ${ex.obs ? `<p class="exemplo-texto"${estiloTextoInline(ex, 'obs')}>${renderFraseComDestaque(ex.obs, ex.obsDestaque)}</p>` : ''}
+      ${ex.obs ? `
+      <div class="exemplo-obs-box">
+        <span class="exemplo-obs-icone"><svg viewBox="0 0 24 24" width="18" height="18"><circle cx="12" cy="12" r="10" fill="#4A80F0"/><rect x="11" y="10" width="2" height="7" rx="1" fill="#fff"/><rect x="11" y="6.5" width="2" height="2" rx="1" fill="#fff"/></svg></span>
+        <p class="exemplo-obs-texto"${estiloTextoInline(ex, 'obs')}>${renderFraseComDestaque(ex.obs, ex.obsDestaque)}</p>
+      </div>` : ''}
       ${(ex.pontos || []).length ? `
       <div class="exemplo-pontos">
         ${ex.pontos.map(p => `
