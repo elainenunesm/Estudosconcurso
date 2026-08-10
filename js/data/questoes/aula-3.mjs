@@ -97,10 +97,12 @@ window.AULA_DATA = {
   },
   {
     tipo: "dica",
-    texto: "",
+    texto: "Esses poderes não existem por acaso — eles fazem parte do Regime Jurídico Administrativo.",
     conclusao: "",
     obs: "",
-    pontos: []
+    pontos: [],
+    textoDestaque: [],
+    textoDestaqueNegrito: []
   }
 ],
 
