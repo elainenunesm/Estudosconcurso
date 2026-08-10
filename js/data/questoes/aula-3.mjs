@@ -183,7 +183,10 @@ window.AULA_DATA = {
     dificuldade: "Fácil",
     tituloDestaque: [],
     tituloDestaqueNegrito: [],
-    tituloNegrito: true
+    tituloNegrito: true,
+    subtitulo: "Qual é o principal objetivo do Direito Administrativo?",
+    subtituloDestaque: [],
+    subtituloDestaqueNegrito: []
   }
 ],
 
