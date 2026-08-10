@@ -1,13 +1,13 @@
 'use strict';
 
 /**
- * AULA-4.MJS — Aula 2:
+ * AULA-4.MJS — Aula 2: Regime Jurídico Administrativo - Parte 2.
  * Gerado pelo Construtor de Aulas (aba "Conteúdo da aula").
  */
 window.AULA_DATA = {
   id:     4,
   modulo: "Direito Administrativo",
-  titulo: "Aula 2:",
+  titulo: "Aula 2: Regime Jurídico Administrativo - Parte 2.",
 
   // Ordem das telas na sequência de estudo — definida em "Estrutura das telas".
   ordem: [
