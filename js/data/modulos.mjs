@@ -32,7 +32,7 @@ const MODULOS = [
     aulas: [
       {
         id:      3,
-        titulo:  "Nova aula",
+        titulo:  "Aula 1: Regime Jurídico Administrativo",
         arquivo: "aula-3",
         icone:   'padrao',
       }
