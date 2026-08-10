@@ -8,8 +8,8 @@
 const MODULOS = [
   {
     id:      1,
-    titulo:  "Nova matéria",
-    materia: "Nova matéria",
+    titulo:  "Materias",
+    materia: "Materias",
     aulas: [
 
     ],
