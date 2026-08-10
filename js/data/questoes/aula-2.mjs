@@ -125,15 +125,17 @@ window.AULA_DATA = {
   {
     tipo: "peca",
     texto: "Exemplo: a palavra propôs.",
-    conclusao: "",
-    obs: "",
+    conclusao: "Propor --> Prop + or (Terminação or indica infinitivo) 2º conjugação.",
+    obs: "Obs: Apesar de ter terminação or, ele faz parte da segunda conjugação porque a palavra sofreu alteração ao longo da história, anteriormente a palavra se escrevia com poer, terminação er.",
     pontos: [],
     textoDestaque: [
       4
     ],
     textoDestaqueNegrito: [
       4
-    ]
+    ],
+    conclusaoDestaque: [],
+    conclusaoDestaqueNegrito: []
   }
 ],
 
