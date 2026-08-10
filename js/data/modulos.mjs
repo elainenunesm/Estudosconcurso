@@ -15,7 +15,7 @@ const MODULOS = [
 const NIVEIS = [
   {
     id:          1,
-    titulo:      "Nova etapa",
+    titulo:      "Etapa",
     etapas:      [],
     insigniaUrl: "",
   }
