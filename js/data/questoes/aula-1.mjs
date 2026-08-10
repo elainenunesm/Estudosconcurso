@@ -280,11 +280,17 @@ window.AULA_DATA = {
     feedbackErrado: "",
     opcoes: [
       "Ação.",
-      "Es"
+      "Estado.",
+      "Mudança de esta"
     ],
-    opcoesNegrito: [],
-    opcoesItalico: [],
+    opcoesNegrito: [
+      false
+    ],
+    opcoesItalico: [
+      false
+    ],
     opcoesDestaque: [
+      [],
       [],
       []
     ],
