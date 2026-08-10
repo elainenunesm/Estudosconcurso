@@ -1,13 +1,13 @@
 'use strict';
 
 /**
- * AULA-1.MJS — aqui3
+ * AULA-1.MJS — Aula 1: Aprenda o que é o verbo
  * Gerado pelo Construtor de Aulas (aba "Conteúdo da aula").
  */
 window.AULA_DATA = {
   id:     1,
   modulo: "Português",
-  titulo: "aqui3",
+  titulo: "Aula 1: Aprenda o que é o verbo",
 
   // Ordem das telas na sequência de estudo — definida em "Estrutura das telas".
   ordem: [
