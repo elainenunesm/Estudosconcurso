@@ -15,6 +15,7 @@ window.AULA_DATA = {
   "exemplo0",
   "exemplo1",
   "exemplo2",
+  "exemplo3",
   "resumo",
   "licao"
 ],
@@ -76,6 +77,14 @@ window.AULA_DATA = {
     ],
     obsDestaque: [],
     obsNegrito: true
+  },
+  {
+    tipo: "estado",
+    texto: "Ao ouvir a palavra estou, imaginamos alguém que permanece de uma determinada forma e não ouve mudança.",
+    conclusao: "",
+    obs: "",
+    pontos: [],
+    textoDestaque: []
   }
 ],
 
