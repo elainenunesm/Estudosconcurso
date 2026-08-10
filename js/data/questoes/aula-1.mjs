@@ -213,7 +213,7 @@ window.AULA_DATA = {
     opcoes: [
       "Ação.",
       "Estado.",
-      ""
+      "Fenomeno da natureza."
     ],
     opcoesNegrito: [
       false
