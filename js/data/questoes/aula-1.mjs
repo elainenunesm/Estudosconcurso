@@ -282,7 +282,7 @@ window.AULA_DATA = {
       "Ação.",
       "Estado.",
       "Mudança de estado.",
-      ""
+      "Fenômeno da natureza. "
     ],
     opcoesNegrito: [
       false,
