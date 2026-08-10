@@ -1,7 +1,7 @@
 {
   "name": "Metodo Feyman",
   "short_name": "Metodo Feyman",
-  "description": "Geramd",
+  "description": "Gerando aulas com o que eu apre",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
