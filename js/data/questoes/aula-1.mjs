@@ -33,11 +33,13 @@ window.AULA_DATA = {
   exemplo: [
   {
     tipo: "pergunta",
-    texto: "",
+    texto: "Verbo é a palavra que expressa ação, estado, mudança de estado ou fenômeno da natureza.",
     conclusao: "",
     obs: "",
     pontos: [],
-    textoDestaque: []
+    textoDestaque: [],
+    textoAlinhamento: "centro",
+    textoNegrito: true
   }
 ],
 
