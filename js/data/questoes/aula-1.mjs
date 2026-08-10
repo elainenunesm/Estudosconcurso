@@ -291,7 +291,9 @@ window.AULA_DATA = {
     dificuldade: "Fácil",
     tituloDestaque: [],
     subtitulo: "\"Amanheceu com neblina hoje.\"",
-    subtituloDestaque: [],
+    subtituloDestaque: [
+      0
+    ],
     tituloNegrito: true
   }
 ],
