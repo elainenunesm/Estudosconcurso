@@ -142,7 +142,7 @@ window.AULA_DATA = {
     titulo: "O que é um verbo?",
     correta: 1,
     feedbackCorreto: "Correto!\nVerbo é a palavra que expressa ação, estado, mudança de estado ou fenômeno da natureza — como vimos em \"correr\", \"Estou\", \"Ficou\" e \"Amanheceu\".",
-    feedbackErrado: "Incorreto.\nVerbo é a palavra que expressa ação, estado, mudança de estado ou fenômeno da natureza — como vimos em \"correr\", \"Estou\", \"Ficou\" e \"Amanheceu\".\nAlternativa B é a correta.",
+    feedbackErrado: "Incorreto.\n\nVerbo é a palavra que expressa ação, estado, mudança de estado ou fenômeno da natureza — como vimos em \"correr\", \"Estou\", \"Ficou\" e \"Amanheceu\".\nAlternativa B é a correta.",
     opcoes: [
       "A palavra que dá nome as pessoas, lugares ou coisas.",
       "A palavra que expressa ação, estado, mudança de estado ou fenomeno da natureza.",
