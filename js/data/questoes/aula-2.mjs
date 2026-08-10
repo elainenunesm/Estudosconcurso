@@ -81,8 +81,12 @@ window.AULA_DATA = {
     conclusao: "Bebeu --> Beb + er (Terminação er indica infinitivo) 2º conjugação.",
     obs: "",
     pontos: [],
-    textoDestaque: [],
-    textoDestaqueNegrito: [],
+    textoDestaque: [
+      4
+    ],
+    textoDestaqueNegrito: [
+      4
+    ],
     conclusaoDestaque: [],
     conclusaoDestaqueNegrito: []
   }
