@@ -31,7 +31,8 @@ window.AULA_DATA = {
   tituloNegrito: true,
   aprenderDestaque: [],
   tituloAlinhamento: "esquerda",
-  descricaoAlinhamento: "centro"
+  descricaoAlinhamento: "centro",
+  importanciaDestaque: []
 },
 
   exemplo: [
@@ -76,7 +77,9 @@ window.AULA_DATA = {
     textoDestaque: [
       7
     ],
-    obsDestaque: [],
+    obsDestaque: [
+      3
+    ],
     obsNegrito: true
   },
   {
