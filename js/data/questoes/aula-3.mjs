@@ -92,6 +92,14 @@ window.AULA_DATA = {
         tipo: "tarefa",
         cor: "#5B2BCB",
         corFundo: "#f0eaff",
+        texto: "Oferecer transporte público.",
+        textoDestaque: [],
+        textoDestaqueNegrito: []
+      },
+      {
+        tipo: "tarefa",
+        cor: "#5B2BCB",
+        corFundo: "#f0eaff",
         texto: ""
       }
     ],
