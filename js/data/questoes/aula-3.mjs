@@ -225,7 +225,7 @@ window.AULA_DATA = {
   {
     titulo: "Sobre o Regime Jurídico Administrativo, assinale a alternativa correta:",
     correta: 2,
-    feedbackCorreto: "Core",
+    feedbackCorreto: "Correto.\n\nGabarito: C",
     feedbackErrado: "",
     opcoes: [
       "Concede poderes à Administração Pública, mas não estabelece limitações.",
