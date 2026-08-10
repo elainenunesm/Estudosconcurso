@@ -14,7 +14,8 @@ window.AULA_DATA = {
   "antesComecar",
   "lista0",
   "exemplo0",
-  "lista1"
+  "lista1",
+  "exemplo1"
 ],
 
   antesComecar: {
@@ -54,6 +55,13 @@ window.AULA_DATA = {
       5,
       6
     ]
+  },
+  {
+    tipo: "pergunta",
+    texto: "",
+    conclusao: "",
+    obs: "",
+    pontos: []
   }
 ],
 
@@ -150,7 +158,9 @@ window.AULA_DATA = {
         tipo: "tarefa",
         cor: "#5B2BCB",
         corFundo: "#f0eaff",
-        texto: "✅ Manter a coleta de lixo."
+        texto: "✅ Manter a coleta de lixo.",
+        textoDestaque: [],
+        textoDestaqueNegrito: []
       }
     ],
     descricao: "",
