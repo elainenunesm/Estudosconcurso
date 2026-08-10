@@ -173,7 +173,7 @@ window.AULA_DATA = {
     invertido: true
   },
   {
-    titulo: "",
+    titulo: "\"O cachorro correu pelo jardim.\"",
     correta: 0,
     feedbackCorreto: "",
     feedbackErrado: "",
@@ -189,7 +189,8 @@ window.AULA_DATA = {
     ],
     dificuldade: "Fácil",
     subtitulo: "O verbo em destaque indica:",
-    subtituloDestaque: []
+    subtituloDestaque: [],
+    tituloDestaque: []
   }
 ],
 
