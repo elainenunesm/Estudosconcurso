@@ -94,7 +94,13 @@ window.AULA_DATA = {
     obsDestaque: [
       3
     ],
-    obsNegrito: true
+    obsNegrito: true,
+    textoDestaqueNegrito: [
+      7
+    ],
+    obsDestaqueNegrito: [
+      3
+    ]
   },
   {
     tipo: "estado",
