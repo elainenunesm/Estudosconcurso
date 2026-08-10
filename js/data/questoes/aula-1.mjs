@@ -253,7 +253,8 @@ window.AULA_DATA = {
     dificuldade: "Fácil",
     subtituloDestaque: [],
     tituloDestaque: [],
-    subtitulo: "\"O garoto cresceu cinco centímetros em seis meses.\""
+    subtitulo: "\"O garoto cresceu cinco centímetros em seis meses.\"",
+    tituloNegrito: true
   }
 ],
 
