@@ -177,19 +177,19 @@ window.AULA_DATA = {
     ],
     classes: [
       {
-        classe: ""
+        classe: "Artigo."
       },
       {
-        classe: ""
+        classe: "Substantivo."
       },
       {
-        classe: "Verbo"
+        classe: "Verbo."
       },
       {
-        classe: ""
+        classe: "Contração preposição em + o artigo"
       },
       {
-        classe: ""
+        classe: "Substantivo."
       }
     ],
     tituloDestaque: [],
@@ -214,19 +214,19 @@ window.AULA_DATA = {
     ],
     classes: [
       {
-        classe: ""
+        classe: "Artigo."
       },
       {
-        classe: ""
+        classe: "Substantivo."
       },
       {
         classe: "Verbo"
       },
       {
-        classe: ""
+        classe: "Contração preposição em + a artigo"
       },
       {
-        classe: ""
+        classe: "Substantivo."
       }
     ],
     tituloDestaque: [],
@@ -248,19 +248,19 @@ window.AULA_DATA = {
     ],
     classes: [
       {
-        classe: ""
+        classe: "Artigo."
       },
       {
-        classe: ""
+        classe: "Substantivo."
       },
       {
         classe: "Verbo"
       },
       {
-        classe: ""
+        classe: "Artigo."
       },
       {
-        classe: ""
+        classe: "Substantivo."
       }
     ],
     tituloDestaque: [],
@@ -281,16 +281,16 @@ window.AULA_DATA = {
     ],
     classes: [
       {
-        classe: ""
+        classe: "Artigo."
       },
       {
-        classe: ""
+        classe: "Substantivo."
       },
       {
         classe: "Verbo"
       },
       {
-        classe: ""
+        classe: "Adjetivo."
       }
     ],
     tituloDestaque: [],
@@ -314,25 +314,25 @@ window.AULA_DATA = {
     ],
     classes: [
       {
-        classe: ""
+        classe: "Artigo."
       },
       {
-        classe: ""
+        classe: "Substantivo."
       },
       {
         classe: "Verbo"
       },
       {
-        classe: ""
+        classe: "Artigo."
       },
       {
-        classe: ""
+        classe: "Substantivo."
       },
       {
-        classe: ""
+        classe: "Contração preposição em + a artigo"
       },
       {
-        classe: ""
+        classe: "Substantivo."
       }
     ],
     tituloDestaque: [],
