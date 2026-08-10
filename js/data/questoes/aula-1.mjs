@@ -288,7 +288,8 @@ window.AULA_DATA = {
       [],
       []
     ],
-    dificuldade: "Fácil"
+    dificuldade: "Fácil",
+    tituloDestaque: []
   }
 ],
 
