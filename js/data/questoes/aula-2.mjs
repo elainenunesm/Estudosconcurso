@@ -24,7 +24,9 @@ window.AULA_DATA = {
   tituloDestaque: [],
   tituloDestaqueNegrito: [],
   descricaoDestaque: [],
-  descricaoDestaqueNegrito: []
+  descricaoDestaqueNegrito: [],
+  tituloNegrito: true,
+  tituloAlinhamento: "esquerda"
 },
 
   exemplo: [],
