@@ -54,11 +54,12 @@ window.AULA_DATA = {
   {
     tipo: "busca",
     texto: "Ao ler uma frase ou texto, uma das primeiras coisas que devemos procurar é o verbo, pois é ele quem dá movimento e sentido à oração.",
-    conclusao: "",
+    conclusao: "Oração é toda frase que possui um verbo.",
     obs: "Oração é toda frase que possui um verbo.",
     pontos: [],
     textoDestaque: [],
-    obsDestaque: []
+    obsDestaque: [],
+    conclusaoDestaque: []
   }
 ],
 
