@@ -63,7 +63,10 @@ window.AULA_DATA = {
     obs: "",
     pontos: [],
     textoDestaque: [],
-    textoDestaqueNegrito: [],
+    textoDestaqueNegrito: [
+      12,
+      13
+    ],
     conclusaoDestaque: [],
     conclusaoDestaqueNegrito: []
   }
