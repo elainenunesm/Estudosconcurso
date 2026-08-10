@@ -179,7 +179,7 @@ window.AULA_DATA = {
     feedbackErrado: "",
     opcoes: [
       "Ação.",
-      "Fenome"
+      "Fenomeno da natureza"
     ],
     opcoesNegrito: [],
     opcoesItalico: [],
