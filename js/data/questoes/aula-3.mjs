@@ -64,8 +64,7 @@ window.AULA_DATA = {
     pontos: [],
     textoDestaque: [
       31,
-      32,
-      7
+      32
     ],
     textoDestaqueNegrito: [
       26,
@@ -73,7 +72,10 @@ window.AULA_DATA = {
       31,
       32,
       28,
-      29
+      29,
+      7,
+      17,
+      18
     ],
     conclusaoDestaque: [],
     conclusaoDestaqueNegrito: [],
