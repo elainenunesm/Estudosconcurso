@@ -240,8 +240,8 @@ window.AULA_DATA = {
     feedbackCorreto: "",
     feedbackErrado: "",
     opcoes: [
-      "Ação",
-      "Estado",
+      "Ação.",
+      "Estado.",
       "Mudança de estado.",
       "Fenômeno da Netureza."
     ],
