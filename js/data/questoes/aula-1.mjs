@@ -144,7 +144,7 @@ window.AULA_DATA = {
     feedbackCorreto: "",
     feedbackErrado: "",
     opcoes: [
-      "",
+      "A palavra ",
       ""
     ],
     opcoesNegrito: [],
