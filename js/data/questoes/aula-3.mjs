@@ -59,11 +59,13 @@ window.AULA_DATA = {
   {
     tipo: "pergunta",
     texto: "Para realizar essas atividades, a lei concede alguns poderes especiais à Administração Pública.",
-    conclusao: "",
+    conclusao: "Imagine um guarda de trânsito.\n\nVocê pode aplicar uma multa? ❌ Não.\nO guarda pode? ✅ Sim.\n\nIsso acontece porque a lei concedeu esse poder ao agente público.",
     obs: "",
     pontos: [],
     textoDestaque: [],
-    textoDestaqueNegrito: []
+    textoDestaqueNegrito: [],
+    conclusaoDestaque: [],
+    conclusaoDestaqueNegrito: []
   }
 ],
 
