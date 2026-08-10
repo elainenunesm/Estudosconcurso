@@ -276,8 +276,8 @@ window.AULA_DATA = {
   {
     titulo: "O verbo em destaque indica:",
     correta: 3,
-    feedbackCorreto: "",
-    feedbackErrado: "Incorreto.\n\"Amanheceu\" indica um fenômeno da natureza — acontece independente de ação humana.\nAlternativa D é a correta.",
+    feedbackCorreto: "orreto.\n\"Amanheceu\" indica um fenômeno da natureza — acontece independente de ação humana.\nAlternativa D é a correta.",
+    feedbackErrado: "Incorreto.\n\"Amanheceu\" indica um fenômeno da natureza — acontece independente de ação humana.\n\nAlternativa D é a correta.",
     opcoes: [
       "Ação.",
       "Estado.",
