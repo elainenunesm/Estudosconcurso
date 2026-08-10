@@ -17,10 +17,12 @@ window.AULA_DATA = {
 ],
 
   antesComecar: {
-  titulo: "teste",
-  descricao: "",
+  titulo: "O que é Direito Administrativo?",
+  descricao: "Nesta aula você vai entender o que é o Direito Administrativo, qual o seu objetivo e o que é o Regime Jurídico Administrativo.",
   aprender: "",
-  importancia: ""
+  importancia: "",
+  tituloDestaque: [],
+  tituloDestaqueNegrito: []
 },
 
   exemplo: [],
