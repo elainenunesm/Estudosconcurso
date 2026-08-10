@@ -27,10 +27,15 @@ const MODULOS = [
   },
   {
     id:      2,
-    titulo:  "D. Administrativo",
-    materia: "D. Administrativo",
+    titulo:  "Direito Administrativo",
+    materia: "Direito Administrativo",
     aulas: [
-
+      {
+        id:      3,
+        titulo:  "Nova aula",
+        arquivo: "aula-3",
+        icone:   'padrao',
+      }
     ],
   }
 ];
