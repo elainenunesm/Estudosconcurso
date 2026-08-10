@@ -12,8 +12,7 @@ window.AULA_DATA = {
   // Ordem das telas na sequência de estudo — definida em "Estrutura das telas".
   ordem: [
   "antesComecar",
-  "resumo",
-  "licao"
+  "exemplo0"
 ],
 
   antesComecar: {
@@ -33,7 +32,17 @@ window.AULA_DATA = {
   tituloAlinhamento: "esquerda"
 },
 
-  exemplo: [],
+  exemplo: [
+  {
+    tipo: "dica",
+    texto: "Toda atuação da Administração Pública deve buscar o interesse da sociedade.",
+    conclusao: "",
+    obs: "",
+    pontos: [],
+    textoDestaque: [],
+    textoDestaqueNegrito: []
+  }
+],
 
   checagem: [],
 
