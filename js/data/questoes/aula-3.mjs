@@ -101,8 +101,15 @@ window.AULA_DATA = {
     conclusao: "Regime Jurídico Administrativo é o conjunto de regras e princípios que estabelece os poderes da Administração Pública e também os limites da sua atuação.\n\nOu seja, ao mesmo tempo que a Administração recebe poderes, ela também recebe obrigações e limitações.",
     obs: "",
     pontos: [],
-    textoDestaque: [],
-    textoDestaqueNegrito: [],
+    textoDestaque: [
+      11,
+      12,
+      13
+    ],
+    textoDestaqueNegrito: [
+      0,
+      1
+    ],
     conclusaoDestaque: [],
     conclusaoDestaqueNegrito: []
   }
