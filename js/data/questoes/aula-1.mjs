@@ -20,6 +20,7 @@ window.AULA_DATA = {
   "exemplo5",
   "checagem0",
   "checagem1",
+  "checagem2",
   "resumo",
   "licao"
 ],
@@ -203,6 +204,25 @@ window.AULA_DATA = {
     tituloDestaque: [
       2
     ]
+  },
+  {
+    titulo: "O verbo em destaque indica:",
+    correta: 0,
+    feedbackCorreto: "",
+    feedbackErrado: "",
+    opcoes: [
+      "",
+      ""
+    ],
+    opcoesNegrito: [],
+    opcoesItalico: [],
+    opcoesDestaque: [
+      [],
+      []
+    ],
+    dificuldade: "Fácil",
+    tituloDestaque: [],
+    subtituloDestaque: []
   }
 ],
 
