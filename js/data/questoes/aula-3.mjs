@@ -197,7 +197,7 @@ window.AULA_DATA = {
     opcoes: [
       "Todo cidadão possui esse poder.",
       "O guarda pode fazer tudo que considerar necessário.",
-      ""
+      "A lei concede esse poder ao agente público."
     ],
     opcoesNegrito: [
       false
