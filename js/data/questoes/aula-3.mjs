@@ -105,10 +105,12 @@ window.AULA_DATA = {
         textoDestaqueNegrito: []
       }
     ],
-    descricao: "egwsswgsges",
+    descricao: "Para que tudo isso aconteça, existem regras que orientam como o Estado deve agir.\n\nEm resumo: Direito Administrativo é o conjunto de regras que organiza o funcionamento da Administração Pública.",
     tituloDestaque: [],
     tituloDestaqueNegrito: [],
-    tituloNegrito: false
+    tituloNegrito: false,
+    descricaoDestaque: [],
+    descricaoDestaqueNegrito: []
   }
 ],
 
