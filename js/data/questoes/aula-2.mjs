@@ -161,7 +161,7 @@ window.AULA_DATA = {
   {
     titulo: "Clique no verbo da frase:",
     correta: 0,
-    feedbackCorreto: "",
+    feedbackCorreto: "Correto!\n\"Cantou\" é o verbo — vem de cantar, infinitivo terminado em -ar (1ª conjugação).",
     feedbackErrado: "",
     sentenca: [
       "A",
