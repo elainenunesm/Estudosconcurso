@@ -156,7 +156,7 @@ window.AULA_DATA = {
 
   checagem: [
   {
-    titulo: "",
+    titulo: "Qual é o principal objetivo do Direito Administrativo?",
     correta: 0,
     feedbackCorreto: "",
     feedbackErrado: "",
@@ -170,7 +170,9 @@ window.AULA_DATA = {
       [],
       []
     ],
-    dificuldade: "Fácil"
+    dificuldade: "Fácil",
+    tituloDestaque: [],
+    tituloDestaqueNegrito: []
   }
 ],
 
