@@ -198,11 +198,34 @@ window.AULA_DATA = {
   },
   {
     titulo: "Clique no verbo da frase:",
-    correta: 0,
+    correta: 2,
     feedbackCorreto: "",
     feedbackErrado: "",
-    sentenca: [],
-    classes: [],
+    sentenca: [
+      "O",
+      "gato",
+      "dormiu",
+      "na",
+      "cama",
+      "."
+    ],
+    classes: [
+      {
+        classe: ""
+      },
+      {
+        classe: ""
+      },
+      {
+        classe: ""
+      },
+      {
+        classe: ""
+      },
+      {
+        classe: ""
+      }
+    ],
     tituloDestaque: [],
     tituloDestaqueNegrito: [],
     tituloNegrito: true
