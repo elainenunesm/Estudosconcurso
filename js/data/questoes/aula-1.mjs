@@ -179,9 +179,9 @@ window.AULA_DATA = {
     feedbackErrado: "",
     opcoes: [
       "Ação.",
-      "Fenomeno da natureza",
-      "Estado",
-      "Mudança de estad"
+      "Fenomeno da natureza.",
+      "Estado.",
+      "Mudança de estado."
     ],
     opcoesNegrito: [
       false,
