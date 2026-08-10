@@ -234,8 +234,8 @@ window.AULA_DATA = {
   {
     titulo: "Clique no verbo da frase:",
     correta: 2,
-    feedbackCorreto: "",
-    feedbackErrado: "",
+    feedbackCorreto: "Correto!\n\"Comeu\" é o verbo — vem de comer, infinitivo terminado em -er (2ª conjugação).",
+    feedbackErrado: "Incorreto!\n\"Comeu\" é o verbo — vem de comer, infinitivo terminado em -er (2ª conjugação).",
     sentenca: [
       "O",
       "Pedro",
