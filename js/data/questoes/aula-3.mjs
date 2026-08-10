@@ -69,13 +69,13 @@ window.AULA_DATA = {
     textoDestaqueNegrito: [
       26,
       27,
-      31,
       32,
       28,
       29,
       7,
-      17,
-      18
+      18,
+      31,
+      19
     ],
     conclusaoDestaque: [],
     conclusaoDestaqueNegrito: [],
