@@ -123,8 +123,14 @@ window.AULA_DATA = {
     titulo: "Esse objetivo é chamado de interesse público. Exemplos:",
     itens: [],
     descricao: "",
-    tituloDestaque: [],
-    tituloDestaqueNegrito: []
+    tituloDestaque: [
+      5,
+      6
+    ],
+    tituloDestaqueNegrito: [
+      5,
+      6
+    ]
   }
 ],
 
