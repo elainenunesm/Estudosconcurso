@@ -195,7 +195,7 @@ window.AULA_DATA = {
     feedbackCorreto: "",
     feedbackErrado: "",
     opcoes: [
-      "",
+      "Todo cidadão possui esse poder.",
       ""
     ],
     opcoesNegrito: [],
