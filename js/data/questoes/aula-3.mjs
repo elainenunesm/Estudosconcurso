@@ -73,7 +73,7 @@ window.AULA_DATA = {
     titulo: "O Estado precisa prestar diversos serviços para a população:",
     itens: [
       {
-        tipo: "livro",
+        tipo: "tarefa",
         cor: "#5B2BCB",
         corFundo: "#f0eaff",
         texto: "Construir escolas.",
