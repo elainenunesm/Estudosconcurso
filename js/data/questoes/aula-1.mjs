@@ -120,7 +120,7 @@ window.AULA_DATA = {
     tipo: "fenomeno",
     texto: "Ao ouvir a palavra amanheceu, imaginamos um fenômeno que independe de ação humana, simplesmente acontece.",
     conclusao: "",
-    obs: "",
+    obs: "Isso representa um fenômeno da natureza.",
     pontos: [],
     textoDestaque: []
   }
