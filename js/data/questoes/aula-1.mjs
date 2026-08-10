@@ -144,7 +144,7 @@ window.AULA_DATA = {
     feedbackCorreto: "",
     feedbackErrado: "",
     opcoes: [
-      "A palavra que dá nome as pessoas, lugares ",
+      "A palavra que dá nome as pessoas, lugares ou coisas.",
       "",
       ""
     ],
