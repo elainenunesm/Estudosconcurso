@@ -71,7 +71,9 @@ window.AULA_DATA = {
     conclusao: "",
     obs: "Isso representa uma ação.",
     pontos: [],
-    textoDestaque: [],
+    textoDestaque: [
+      7
+    ],
     obsDestaque: []
   }
 ],
