@@ -200,7 +200,7 @@ window.AULA_DATA = {
     titulo: "Clique no verbo da frase:",
     correta: 2,
     feedbackCorreto: "",
-    feedbackErrado: "",
+    feedbackErrado: "Incorreto.\n\"Dormiu\" é o verbo — vem de cantar, infinitivo terminado em -ar (1ª conjugação).",
     sentenca: [
       "O",
       "gato",
