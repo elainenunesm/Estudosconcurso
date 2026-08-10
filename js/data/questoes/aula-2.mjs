@@ -58,8 +58,12 @@ window.AULA_DATA = {
     conclusao: "Cantou --> Cant + ar (Terminação ar indica infinitivo) 1º conjugação.",
     obs: "",
     pontos: [],
-    textoDestaque: [],
-    textoDestaqueNegrito: [],
+    textoDestaque: [
+      4
+    ],
+    textoDestaqueNegrito: [
+      4
+    ],
     conclusaoDestaque: [],
     conclusaoDestaqueNegrito: []
   }
