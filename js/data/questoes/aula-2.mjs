@@ -163,8 +163,31 @@ window.AULA_DATA = {
     correta: 0,
     feedbackCorreto: "",
     feedbackErrado: "",
-    sentenca: [],
-    classes: [],
+    sentenca: [
+      "A",
+      "maria",
+      "cantou",
+      "no",
+      "coral",
+      "."
+    ],
+    classes: [
+      {
+        classe: ""
+      },
+      {
+        classe: ""
+      },
+      {
+        classe: ""
+      },
+      {
+        classe: ""
+      },
+      {
+        classe: ""
+      }
+    ],
     tituloDestaque: [],
     tituloDestaqueNegrito: [],
     tituloNegrito: true
