@@ -74,7 +74,8 @@ window.AULA_DATA = {
     conclusaoDestaqueNegrito: [
       31,
       32
-    ]
+    ],
+    iconeUrl: ""
   }
 ],
 
