@@ -211,12 +211,18 @@ window.AULA_DATA = {
     feedbackCorreto: "Correto!\n\"Está\" indica um estado — uma forma em que Ana permanece, sem mudança.",
     feedbackErrado: "Incorreto.\n\"Está\" indica um estado  — uma forma em que Ana permanece, sem mudança.\nAlternativa B é a correta.",
     opcoes: [
-      "",
+      "Ação.",
+      "Estado.",
       ""
     ],
-    opcoesNegrito: [],
-    opcoesItalico: [],
+    opcoesNegrito: [
+      false
+    ],
+    opcoesItalico: [
+      false
+    ],
     opcoesDestaque: [
+      [],
       [],
       []
     ],
