@@ -17,12 +17,15 @@ window.AULA_DATA = {
 ],
 
   antesComecar: {
-  titulo: "?",
+  titulo: "Regime Jurídico Administrativo",
   descricao: "O que é Direito Administrativo, seu objetivo, o que é interesse público, por que a Administração tem poderes diferentes, o que é o Regime Jurídico Administrativo, o que são prerrogativas e os princípios da supremacia e da indisponibilidade do interesse público.",
   aprender: "",
   importancia: "",
   descricaoDestaque: [],
-  descricaoDestaqueNegrito: []
+  descricaoDestaqueNegrito: [],
+  tituloDestaque: [],
+  tituloDestaqueNegrito: [],
+  tituloNegrito: true
 },
 
   exemplo: [],
