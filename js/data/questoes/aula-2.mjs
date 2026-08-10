@@ -15,6 +15,7 @@ window.AULA_DATA = {
   "exemplo0",
   "exemplo1",
   "exemplo2",
+  "exemplo3",
   "resumo",
   "licao"
 ],
@@ -97,6 +98,15 @@ window.AULA_DATA = {
     conclusaoDestaqueNegrito: [],
     textoNegrito: false,
     conclusaoNegrito: true
+  },
+  {
+    tipo: "acao",
+    texto: "Exemplo: a palavra partiu.",
+    conclusao: "",
+    obs: "",
+    pontos: [],
+    textoDestaque: [],
+    textoDestaqueNegrito: []
   }
 ],
 
