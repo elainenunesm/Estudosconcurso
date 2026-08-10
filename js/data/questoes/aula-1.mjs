@@ -205,7 +205,7 @@ window.AULA_DATA = {
       2
     ],
     tituloDestaque: [],
-    invertido: true,
+    invertido: false,
     subtituloNegrito: true
   },
   {
