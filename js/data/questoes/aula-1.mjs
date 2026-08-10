@@ -12,6 +12,7 @@ window.AULA_DATA = {
   // Ordem das telas na sequência de estudo — definida em "Estrutura das telas".
   ordem: [
   "antesComecar",
+  "exemplo0",
   "resumo",
   "licao"
 ],
@@ -29,7 +30,16 @@ window.AULA_DATA = {
   descricaoAlinhamento: "centro"
 },
 
-  exemplo: [],
+  exemplo: [
+  {
+    tipo: "pergunta",
+    texto: "",
+    conclusao: "",
+    obs: "",
+    pontos: [],
+    textoDestaque: []
+  }
+],
 
   checagem: [],
 
