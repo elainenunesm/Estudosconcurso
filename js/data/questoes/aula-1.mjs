@@ -14,6 +14,7 @@ window.AULA_DATA = {
   "antesComecar",
   "exemplo0",
   "exemplo1",
+  "exemplo2",
   "resumo",
   "licao"
 ],
@@ -63,6 +64,14 @@ window.AULA_DATA = {
     obsDestaque: [],
     conclusaoDestaque: [],
     obsNegrito: true
+  },
+  {
+    tipo: "acao",
+    texto: "Por exemplo, ao ouvir a palavra correr, imaginamos alguém se movimentando rapidamente de um lugar para outro.",
+    conclusao: "",
+    obs: "",
+    pontos: [],
+    textoDestaque: []
   }
 ],
 
