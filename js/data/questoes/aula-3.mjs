@@ -157,12 +157,12 @@ window.AULA_DATA = {
   checagem: [
   {
     titulo: "Qual é o principal objetivo do Direito Administrativo?",
-    correta: 0,
+    correta: 1,
     feedbackCorreto: "",
     feedbackErrado: "",
     opcoes: [
       "Aumentar os poderes dos agentes públicos.",
-      ""
+      "Organizar o funcionamento da Administração Pública e orientar sua atuação em benefício da sociedade."
     ],
     opcoesNegrito: [],
     opcoesItalico: [],
