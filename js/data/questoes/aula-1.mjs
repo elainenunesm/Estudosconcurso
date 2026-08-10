@@ -122,7 +122,8 @@ window.AULA_DATA = {
     conclusao: "",
     obs: "Isso representa um fenômeno da natureza.",
     pontos: [],
-    textoDestaque: []
+    textoDestaque: [],
+    obsDestaque: []
   }
 ],
 
