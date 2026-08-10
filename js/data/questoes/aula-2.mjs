@@ -13,6 +13,7 @@ window.AULA_DATA = {
   ordem: [
   "antesComecar",
   "exemplo0",
+  "exemplo1",
   "resumo",
   "licao"
 ],
@@ -50,6 +51,15 @@ window.AULA_DATA = {
       5,
       10
     ]
+  },
+  {
+    tipo: "acao",
+    texto: "Exemplo: a palavra cantou.",
+    conclusao: "",
+    obs: "",
+    pontos: [],
+    textoDestaque: [],
+    textoDestaqueNegrito: []
   }
 ],
 
