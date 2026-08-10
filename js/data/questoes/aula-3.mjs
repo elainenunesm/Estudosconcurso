@@ -162,11 +162,17 @@ window.AULA_DATA = {
     feedbackErrado: "",
     opcoes: [
       "Aumentar os poderes dos agentes públicos.",
-      "Organizar o funcionamento da Administração Pública e orientar sua atuação em benefício da sociedade."
+      "Organizar o funcionamento da Administração Pública e orientar sua atuação em benefício da sociedade.",
+      "Criar regras apenas para servidores públicos."
     ],
-    opcoesNegrito: [],
-    opcoesItalico: [],
+    opcoesNegrito: [
+      false
+    ],
+    opcoesItalico: [
+      false
+    ],
     opcoesDestaque: [
+      [],
       [],
       []
     ],
