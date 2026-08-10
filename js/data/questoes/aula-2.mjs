@@ -17,8 +17,7 @@ window.AULA_DATA = {
   "exemplo2",
   "exemplo3",
   "exemplo4",
-  "resumo",
-  "licao"
+  "checagem0"
 ],
 
   antesComecar: {
@@ -158,7 +157,19 @@ window.AULA_DATA = {
   }
 ],
 
-  checagem: [],
+  checagem: [
+  {
+    titulo: "Clique no verbo da frase:",
+    correta: 0,
+    feedbackCorreto: "",
+    feedbackErrado: "",
+    sentenca: [],
+    classes: [],
+    tituloDestaque: [],
+    tituloDestaqueNegrito: [],
+    tituloNegrito: true
+  }
+],
 
   resumo: {
   titulo: "",
