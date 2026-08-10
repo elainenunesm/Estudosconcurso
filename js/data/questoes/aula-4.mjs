@@ -17,7 +17,7 @@ window.AULA_DATA = {
 ],
 
   antesComecar: {
-  titulo: "",
+  titulo: "O que é Direito Administrativo?",
   descricao: "O que é Direito Administrativo, seu objetivo, o que é interesse público, por que a Administração tem poderes diferentes, o que é o Regime Jurídico Administrativo, o que são prerrogativas e os princípios da supremacia e da indisponibilidade do interesse público.",
   aprender: "",
   importancia: "",
