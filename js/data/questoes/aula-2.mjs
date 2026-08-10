@@ -300,8 +300,8 @@ window.AULA_DATA = {
   {
     titulo: "Clique no verbo da frase:",
     correta: 0,
-    feedbackCorreto: "",
-    feedbackErrado: "",
+    feedbackCorreto: "Correto!\n\"Pôs\" é o verbo — vem de pôr, um verbo irregular (antigamente escrito \"poer\", por isso é da 2ª conjugação).",
+    feedbackErrado: "Incorreto!\n\"Pôs\" é o verbo — vem de pôr, um verbo irregular (antigamente escrito \"poer\", por isso é da 2ª conjugação).",
     sentenca: [],
     classes: [],
     tituloDestaque: [],
