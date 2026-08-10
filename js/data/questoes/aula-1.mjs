@@ -157,7 +157,9 @@ window.AULA_DATA = {
     subtituloDestaque: [],
     tituloDestaque: [],
     tituloNegrito: true,
-    subtitulo: "Escolha a definição correta."
+    subtitulo: "Escolha a definição correta.",
+    subtituloNegrito: true,
+    invertido: true
   }
 ],
 
