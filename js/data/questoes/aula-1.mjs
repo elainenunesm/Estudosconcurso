@@ -147,7 +147,7 @@ window.AULA_DATA = {
       "A palavra que dá nome as pessoas, lugares ou coisas.",
       "A palavra que expressa ação, estado, mudança de estado ou fenomeno da natureza.",
       "A palavra que qualifica o substantivo, indica uma característica.",
-      "A palavra que substitui o substantivo, indica uma característica."
+      "A palavra que substitui o substantivo na frase."
     ],
     opcoesNegrito: [
       false,
