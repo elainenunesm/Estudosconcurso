@@ -70,7 +70,7 @@ window.AULA_DATA = {
 
   lista: [
   {
-    titulo: "",
+    titulo: "hdrfhbdrhdr",
     itens: [
       {
         tipo: "livro",
@@ -89,7 +89,10 @@ window.AULA_DATA = {
         textoDestaqueNegrito: []
       }
     ],
-    descricao: ""
+    descricao: "",
+    tituloDestaque: [],
+    tituloDestaqueNegrito: [],
+    tituloNegrito: true
   }
 ],
 
