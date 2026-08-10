@@ -128,8 +128,12 @@ window.AULA_DATA = {
     conclusao: "",
     obs: "",
     pontos: [],
-    textoDestaque: [],
-    textoDestaqueNegrito: []
+    textoDestaque: [
+      4
+    ],
+    textoDestaqueNegrito: [
+      4
+    ]
   }
 ],
 
