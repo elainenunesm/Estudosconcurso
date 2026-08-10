@@ -275,7 +275,7 @@ window.AULA_DATA = {
   },
   {
     titulo: "O verbo em destaque indica:",
-    correta: 0,
+    correta: 2,
     feedbackCorreto: "",
     feedbackErrado: "",
     opcoes: [
