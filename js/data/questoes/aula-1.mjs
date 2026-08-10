@@ -201,10 +201,10 @@ window.AULA_DATA = {
     ],
     dificuldade: "Fácil",
     subtitulo: "\"O cachorro correu pelo jardim.\"",
-    subtituloDestaque: [],
-    tituloDestaque: [
+    subtituloDestaque: [
       2
     ],
+    tituloDestaque: [],
     invertido: true,
     subtituloNegrito: true
   },
