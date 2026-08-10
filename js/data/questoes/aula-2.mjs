@@ -160,7 +160,7 @@ window.AULA_DATA = {
   checagem: [
   {
     titulo: "Clique no verbo da frase:",
-    correta: 0,
+    correta: 2,
     feedbackCorreto: "Correto!\n\"Cantou\" é o verbo — vem de cantar, infinitivo terminado em -ar (1ª conjugação).",
     feedbackErrado: "Incorreto.\n\"Cantou\" é o verbo — vem de cantar, infinitivo terminado em -ar (1ª conjugação).",
     sentenca: [
