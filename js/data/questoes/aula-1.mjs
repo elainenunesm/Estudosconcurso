@@ -1,18 +1,17 @@
 'use strict';
 
 /**
- * AULA-1.MJS — xaqdxqd
+ * AULA-1.MJS — Nova aula
  * Gerado pelo Construtor de Aulas (aba "Conteúdo da aula").
  */
 window.AULA_DATA = {
   id:     1,
-  modulo: "cacedc",
-  titulo: "xaqdxqd",
+  modulo: "aqui 2",
+  titulo: "Nova aula",
 
   // Ordem das telas na sequência de estudo — definida em "Estrutura das telas".
   ordem: [
   "antesComecar",
-  "checagem0",
   "resumo",
   "licao"
 ],
@@ -26,25 +25,7 @@ window.AULA_DATA = {
 
   exemplo: [],
 
-  checagem: [
-  {
-    titulo: "",
-    correta: 0,
-    feedbackCorreto: "",
-    feedbackErrado: "",
-    opcoes: [
-      "Certo",
-      "Errado"
-    ],
-    certoErrado: true,
-    opcoesNegrito: [],
-    opcoesItalico: [],
-    opcoesDestaque: [
-      [],
-      []
-    ]
-  }
-],
+  checagem: [],
 
   resumo: {
   titulo: "",
