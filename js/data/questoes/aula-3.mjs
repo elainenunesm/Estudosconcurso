@@ -126,6 +126,14 @@ window.AULA_DATA = {
         tipo: "tarefa",
         cor: "#5B2BCB",
         corFundo: "#f0eaff",
+        texto: "✅ Construir um hospital.",
+        textoDestaque: [],
+        textoDestaqueNegrito: []
+      },
+      {
+        tipo: "tarefa",
+        cor: "#5B2BCB",
+        corFundo: "#f0eaff",
         texto: ""
       }
     ],
