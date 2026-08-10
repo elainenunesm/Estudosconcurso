@@ -13,7 +13,8 @@ window.AULA_DATA = {
   ordem: [
   "antesComecar",
   "lista0",
-  "exemplo0"
+  "exemplo0",
+  "lista1"
 ],
 
   antesComecar: {
@@ -117,6 +118,13 @@ window.AULA_DATA = {
       19,
       20
     ]
+  },
+  {
+    titulo: "Esse objetivo é chamado de interesse público. Exemplos:",
+    itens: [],
+    descricao: "",
+    tituloDestaque: [],
+    tituloDestaqueNegrito: []
   }
 ],
 
