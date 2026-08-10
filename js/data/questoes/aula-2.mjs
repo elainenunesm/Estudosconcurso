@@ -123,7 +123,7 @@ window.AULA_DATA = {
     conclusaoNegrito: true
   },
   {
-    tipo: "acao",
+    tipo: "peca",
     texto: "Exemplo: a palavra propôs.",
     conclusao: "",
     obs: "",
