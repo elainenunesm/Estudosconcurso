@@ -61,7 +61,12 @@ window.AULA_DATA = {
     texto: "Para realizar essas atividades, a lei concede alguns poderes especiais à Administração Pública.",
     conclusao: "Imagine um guarda de trânsito.\n\nVocê pode aplicar uma multa? ❌ Não.\nO guarda pode? ✅ Sim.\n\nIsso acontece porque a lei concedeu esse poder ao agente público.",
     obs: "",
-    pontos: [],
+    pontos: [
+      {
+        tipo: "dica",
+        texto: ""
+      }
+    ],
     textoDestaque: [],
     textoDestaqueNegrito: [
       12,
@@ -75,7 +80,7 @@ window.AULA_DATA = {
       31,
       32
     ],
-    iconeUrl: ""
+    iconeUrl: "https://www.flaticon.com/br/icone-gratis/agente-de-marketing_7605089?term=agente&page=1&position=1&origin=search&related_id=7605089"
   }
 ],
 
