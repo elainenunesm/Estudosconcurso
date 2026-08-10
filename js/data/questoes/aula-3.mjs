@@ -79,6 +79,14 @@ window.AULA_DATA = {
         texto: "gagagsg",
         textoDestaque: [],
         textoDestaqueNegrito: []
+      },
+      {
+        tipo: "livro",
+        cor: "#5B2BCB",
+        corFundo: "#f0eaff",
+        texto: "vasvadvad",
+        textoDestaque: [],
+        textoDestaqueNegrito: []
       }
     ],
     descricao: ""
