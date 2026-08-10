@@ -18,7 +18,8 @@ window.AULA_DATA = {
   "exemplo1",
   "exemplo2",
   "checagem0",
-  "checagem1"
+  "checagem1",
+  "checagem2"
 ],
 
   antesComecar: {
@@ -218,7 +219,28 @@ window.AULA_DATA = {
     subtituloDestaque: [],
     subtituloDestaqueNegrito: [],
     tituloDestaque: [],
-    tituloDestaqueNegrito: []
+    tituloDestaqueNegrito: [],
+    tituloNegrito: true
+  },
+  {
+    titulo: "Sobre o Regime Jurídico Administrativo, assinale a alternativa correta:",
+    correta: 0,
+    feedbackCorreto: "",
+    feedbackErrado: "",
+    opcoes: [
+      "",
+      ""
+    ],
+    opcoesNegrito: [],
+    opcoesItalico: [],
+    opcoesDestaque: [
+      [],
+      []
+    ],
+    dificuldade: "Fácil",
+    tituloDestaque: [],
+    tituloDestaqueNegrito: [],
+    tituloNegrito: true
   }
 ],
 
