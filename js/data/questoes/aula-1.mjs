@@ -85,7 +85,10 @@ window.AULA_DATA = {
     obs: "Isso representa um estado.",
     pontos: [],
     textoDestaque: [
-      4
+      4,
+      15,
+      16,
+      17
     ],
     obsDestaque: [
       3
