@@ -184,7 +184,7 @@ window.AULA_DATA = {
     tituloDestaque: [],
     tituloDestaqueNegrito: [],
     tituloNegrito: true,
-    subtitulo: "Qual é o principal objetivo do Direito Administrativo?",
+    subtitulo: "",
     subtituloDestaque: [],
     subtituloDestaqueNegrito: []
   }
