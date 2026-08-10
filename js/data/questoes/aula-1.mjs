@@ -281,15 +281,19 @@ window.AULA_DATA = {
     opcoes: [
       "Ação.",
       "Estado.",
-      "Mudança de esta"
+      "Mudança de estado.",
+      ""
     ],
     opcoesNegrito: [
+      false,
       false
     ],
     opcoesItalico: [
+      false,
       false
     ],
     opcoesDestaque: [
+      [],
       [],
       [],
       []
