@@ -306,7 +306,10 @@ window.AULA_DATA = {
     classes: [],
     tituloDestaque: [],
     tituloDestaqueNegrito: [],
-    tituloNegrito: true
+    tituloNegrito: true,
+    subtitulo: "A professora pôs o livro na ",
+    subtituloDestaque: [],
+    subtituloDestaqueNegrito: []
   }
 ],
 
