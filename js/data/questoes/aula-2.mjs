@@ -269,8 +269,8 @@ window.AULA_DATA = {
   {
     titulo: "Clique no verbo da frase:",
     correta: 2,
-    feedbackCorreto: "",
-    feedbackErrado: "",
+    feedbackCorreto: "Correto!\n\"Sorriu\" é o verbo — vem de sorrir, infinitivo terminado em -ir (3ª conjugação).",
+    feedbackErrado: "Incorreto!\n\"Sorriu\" é o verbo — vem de sorrir, infinitivo terminado em -ir (3ª conjugação).",
     sentenca: [
       "O",
       "menino",
