@@ -235,7 +235,8 @@ window.AULA_DATA = {
     subtituloDestaque: [
       1
     ],
-    subtitulo: "\"Ana está muito animada com a viagem.\""
+    subtitulo: "\"Ana está muito animada com a viagem.\"",
+    tituloNegrito: true
   },
   {
     titulo: "O verbo em destaque indica:",
