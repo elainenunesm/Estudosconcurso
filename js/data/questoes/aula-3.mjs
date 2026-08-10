@@ -17,7 +17,8 @@ window.AULA_DATA = {
   "lista1",
   "exemplo1",
   "exemplo2",
-  "checagem0"
+  "checagem0",
+  "checagem1"
 ],
 
   antesComecar: {
@@ -187,6 +188,27 @@ window.AULA_DATA = {
     subtitulo: "",
     subtituloDestaque: [],
     subtituloDestaqueNegrito: []
+  },
+  {
+    titulo: "Um guarda de trânsito pode aplicar uma multa porque:",
+    correta: 0,
+    feedbackCorreto: "",
+    feedbackErrado: "",
+    opcoes: [
+      "",
+      ""
+    ],
+    opcoesNegrito: [],
+    opcoesItalico: [],
+    opcoesDestaque: [
+      [],
+      []
+    ],
+    dificuldade: "Fácil",
+    subtituloDestaque: [],
+    subtituloDestaqueNegrito: [],
+    tituloDestaque: [],
+    tituloDestaqueNegrito: []
   }
 ],
 
