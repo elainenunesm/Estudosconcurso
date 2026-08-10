@@ -35,6 +35,12 @@ const MODULOS = [
         titulo:  "Aula 1: Regime Jurídico Administrativo",
         arquivo: "aula-3",
         icone:   'padrao',
+      },
+      {
+        id:      4,
+        titulo:  "Nova aula",
+        arquivo: "aula-4",
+        icone:   'padrao',
       }
     ],
   }
