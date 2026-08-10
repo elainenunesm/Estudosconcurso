@@ -237,7 +237,7 @@ window.AULA_DATA = {
   {
     titulo: "O verbo em destaque indica:",
     correta: 2,
-    feedbackCorreto: "Correto.\n\"Cresceu\" indica uma mudança de estado — o garoto alterou sua altura original.\nAlternativa C é a correta.",
+    feedbackCorreto: "Correto.\n\"Cresceu\" indica uma mudança de estado — o garoto alterou sua altura original.",
     feedbackErrado: "Incorreto.\n\"Cresceu\" indica uma mudança de estado — o garoto alterou sua altura original.\nAlternativa C é a correta.",
     opcoes: [
       "Ação.",
