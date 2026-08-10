@@ -142,8 +142,8 @@ function mostrarIntro(aula, introIdx = 0) {
     <div class="intro-card">
       ${marcarCartaoHtml('antesComecar')}
       <span class="intro-label">Antes de começar</span>
-      <h2 class="intro-titulo"${estiloTextoInline(ac, 'titulo')}>${ac.titulo ? renderFraseComDestaque(ac.titulo, ac.tituloDestaque) : aula.titulo}</h2>
-      <p class="intro-desc"${estiloTextoInline(ac, 'descricao')}>${renderFraseComDestaque(ac.descricao || '', ac.descricaoDestaque)}</p>
+      <h2 class="intro-titulo"${estiloTextoInline(ac, 'titulo')}>${ac.titulo ? renderFraseComDestaque(ac.titulo, ac.tituloDestaque, ac.tituloDestaqueNegrito) : aula.titulo}</h2>
+      <p class="intro-desc"${estiloTextoInline(ac, 'descricao')}>${renderFraseComDestaque(ac.descricao || '', ac.descricaoDestaque, ac.descricaoDestaqueNegrito)}</p>
       <div class="intro-info">
         <div class="intro-info-item">
           <div class="intro-info-icone-wrap">
@@ -154,7 +154,7 @@ function mostrarIntro(aula, introIdx = 0) {
           </div>
           <div class="intro-info-texto">
             <h3>O que você vai aprender</h3>
-            <p${estiloTextoInline(ac, 'aprender')}>${renderFraseComDestaque(ac.aprender || '', ac.aprenderDestaque)}</p>
+            <p${estiloTextoInline(ac, 'aprender')}>${renderFraseComDestaque(ac.aprender || '', ac.aprenderDestaque, ac.aprenderDestaqueNegrito)}</p>
           </div>
         </div>
         <div class="intro-info-item">
@@ -167,7 +167,7 @@ function mostrarIntro(aula, introIdx = 0) {
           </div>
           <div class="intro-info-texto">
             <h3>Por que isso é importante</h3>
-            <p${estiloTextoInline(ac, 'importancia')}>${renderFraseComDestaque(ac.importancia || '', ac.importanciaDestaque)}</p>
+            <p${estiloTextoInline(ac, 'importancia')}>${renderFraseComDestaque(ac.importancia || '', ac.importanciaDestaque, ac.importanciaDestaqueNegrito)}</p>
           </div>
         </div>
       </div>
@@ -358,18 +358,26 @@ function tokenizarFraseSimples(frase) {
   return tokens;
 }
 
-/** Renderiza um texto corrido (Título/Instrução) com algumas palavras em azul de destaque —
- * diferente dos word-chips, aqui o texto continua fluindo normalmente como frase. Quebras de
- * linha ("\n", Enter no Construtor de Aulas) viram <br> — os índices de destaque continuam
- * contando palavra por palavra em sequência ao longo das linhas, sem invalidar destaques salvos. */
-function renderFraseComDestaque(texto, indices) {
+/** Renderiza um texto corrido (Título/Instrução) com algumas palavras em azul de destaque e/ou em
+ * negrito — diferente dos word-chips, aqui o texto continua fluindo normalmente como frase. Uma
+ * palavra pode ser só azul, só negrito, ou as duas coisas ao mesmo tempo. Quebras de linha ("\n",
+ * Enter no Construtor de Aulas) viram <br> — os índices continuam contando palavra por palavra em
+ * sequência ao longo das linhas, sem invalidar destaques salvos. */
+function renderFraseComDestaque(texto, indices, indicesNegrito) {
   if (!texto) return '';
   const destacadas = new Set(indices || []);
+  const negritos = new Set(indicesNegrito || []);
   let contador = 0;
   return texto.split('\n').map(linha => {
     const partes = tokenizarFraseSimples(linha).map(tok => {
       const i = contador++;
-      return (destacadas.has(i) && !/^[.,!?;:]+$/.test(tok)) ? `<span class="destaque-azul">${tok}</span>` : tok;
+      if (/^[.,!?;:]+$/.test(tok)) return tok;
+      const azul = destacadas.has(i);
+      const negrito = negritos.has(i);
+      if (!azul && !negrito) return tok;
+      const classe = azul ? ' class="destaque-azul"' : '';
+      const estilo = negrito ? ' style="font-weight:700"' : '';
+      return `<span${classe}${estilo}>${tok}</span>`;
     });
     return partes.join(' ').replace(/ ([.,!?;:]+)/g, '$1');
   }).join('<br>');
@@ -399,11 +407,11 @@ function htmlCardAudio(a) {
   return `
       <div class="card-audio">
         ${(a.titulo || a.subtitulo) ? `<div class="card-audio-cabecalho">
-          ${a.titulo ? `<p class="card-audio-titulo"${estiloTextoInline(a, 'titulo')}>${renderFraseComDestaque(a.titulo, a.tituloDestaque)}</p>` : ''}
-          ${a.subtitulo ? `<p class="card-audio-subtitulo"${estiloTextoInline(a, 'subtitulo')}>${renderFraseComDestaque(a.subtitulo, a.subtituloDestaque)}</p>` : ''}
+          ${a.titulo ? `<p class="card-audio-titulo"${estiloTextoInline(a, 'titulo')}>${renderFraseComDestaque(a.titulo, a.tituloDestaque, a.tituloDestaqueNegrito)}</p>` : ''}
+          ${a.subtitulo ? `<p class="card-audio-subtitulo"${estiloTextoInline(a, 'subtitulo')}>${renderFraseComDestaque(a.subtitulo, a.subtituloDestaque, a.subtituloDestaqueNegrito)}</p>` : ''}
         </div>` : ''}
         ${a.audioUrl ? `<audio class="card-audio-player" id="cardAudioPlayer" controls src="${a.audioUrl}"></audio>` : ''}
-        ${a.texto ? `<p class="card-audio-texto"${estiloTextoInline(a, 'texto')}>${renderFraseComDestaque(a.texto, a.textoDestaque)}</p>` : ''}
+        ${a.texto ? `<p class="card-audio-texto"${estiloTextoInline(a, 'texto')}>${renderFraseComDestaque(a.texto, a.textoDestaque, a.textoDestaqueNegrito)}</p>` : ''}
       </div>`;
 }
 
@@ -416,8 +424,8 @@ function htmlCardGravacaoAluno(g) {
   return `
       <div class="card-audio card-gravacao-aluno">
         ${(g.titulo || g.subtitulo) ? `<div class="card-audio-cabecalho">
-          ${g.titulo ? `<p class="card-audio-titulo"${estiloTextoInline(g, 'titulo')}>${renderFraseComDestaque(g.titulo, g.tituloDestaque)}</p>` : ''}
-          ${g.subtitulo ? `<p class="card-audio-subtitulo"${estiloTextoInline(g, 'subtitulo')}>${renderFraseComDestaque(g.subtitulo, g.subtituloDestaque)}</p>` : ''}
+          ${g.titulo ? `<p class="card-audio-titulo"${estiloTextoInline(g, 'titulo')}>${renderFraseComDestaque(g.titulo, g.tituloDestaque, g.tituloDestaqueNegrito)}</p>` : ''}
+          ${g.subtitulo ? `<p class="card-audio-subtitulo"${estiloTextoInline(g, 'subtitulo')}>${renderFraseComDestaque(g.subtitulo, g.subtituloDestaque, g.subtituloDestaqueNegrito)}</p>` : ''}
         </div>` : ''}
         <div class="gravacao-aluno-wrap" id="gravacaoAlunoWrap">
           <div class="gravacao-aluno-controles">
@@ -426,7 +434,7 @@ function htmlCardGravacaoAluno(g) {
           </div>
           <div class="gravacao-aluno-preview"></div>
         </div>
-        ${g.texto ? `<p class="card-audio-texto"${estiloTextoInline(g, 'texto')}>${renderFraseComDestaque(g.texto, g.textoDestaque)}</p>` : ''}
+        ${g.texto ? `<p class="card-audio-texto"${estiloTextoInline(g, 'texto')}>${renderFraseComDestaque(g.texto, g.textoDestaque, g.textoDestaqueNegrito)}</p>` : ''}
       </div>`;
 }
 
@@ -838,12 +846,12 @@ function mostrarExemplo(aula, introIdx, i) {
           ${icone}
         </svg>
       </div>
-      ${ex.texto ? `<p class="exemplo-texto"${estiloTextoInline(ex, 'texto')}>${renderFraseComDestaque(ex.texto, ex.textoDestaque)}</p>` : ''}
-      ${ex.conclusao ? `<p class="exemplo-conclusao"${estiloTextoInline(ex, 'conclusao')}>${renderFraseComDestaque(ex.conclusao, ex.conclusaoDestaque)}</p>` : ''}
+      ${ex.texto ? `<p class="exemplo-texto"${estiloTextoInline(ex, 'texto')}>${renderFraseComDestaque(ex.texto, ex.textoDestaque, ex.textoDestaqueNegrito)}</p>` : ''}
+      ${ex.conclusao ? `<p class="exemplo-conclusao"${estiloTextoInline(ex, 'conclusao')}>${renderFraseComDestaque(ex.conclusao, ex.conclusaoDestaque, ex.conclusaoDestaqueNegrito)}</p>` : ''}
       ${ex.obs ? `
       <div class="exemplo-obs-box">
         <span class="exemplo-obs-icone"><svg viewBox="0 0 24 24" width="18" height="18"><circle cx="12" cy="12" r="10" fill="#4A80F0"/><rect x="11" y="10" width="2" height="7" rx="1" fill="#fff"/><rect x="11" y="6.5" width="2" height="2" rx="1" fill="#fff"/></svg></span>
-        <p class="exemplo-obs-texto"${estiloTextoInline(ex, 'obs')}>${renderFraseComDestaque(ex.obs, ex.obsDestaque)}</p>
+        <p class="exemplo-obs-texto"${estiloTextoInline(ex, 'obs')}>${renderFraseComDestaque(ex.obs, ex.obsDestaque, ex.obsDestaqueNegrito)}</p>
       </div>` : ''}
       ${(ex.pontos || []).length ? `
       <div class="exemplo-pontos">
@@ -852,14 +860,14 @@ function mostrarExemplo(aula, introIdx, i) {
             <div class="exemplo-ponto-icone">
               <svg viewBox="0 0 24 24" width="22" height="22">${iconeExternoOuNulo(p) || (RESUMO_ICONES[p.tipo] ? RESUMO_ICONES[p.tipo]('#4A80F0') : '')}</svg>
             </div>
-            <p class="exemplo-ponto-texto"${estiloTextoInline(p, 'texto')}>${renderFraseComDestaque(p.texto || '', p.textoDestaque)}</p>
+            <p class="exemplo-ponto-texto"${estiloTextoInline(p, 'texto')}>${renderFraseComDestaque(p.texto || '', p.textoDestaque, p.textoDestaqueNegrito)}</p>
           </div>`).join('')}
       </div>` : ''}
       ${ex.palavraSelecionavel ? `
       <div class="passo-caixa">
         <div class="passo-caixa-cabecalho">
           <div class="passo-caixa-icone"><svg viewBox="0 0 24 24" width="22" height="22">${RESUMO_ICONES.tarefa('#4A80F0')}</svg></div>
-          <p class="passo-caixa-inline"${estiloTextoInline(ex.palavraSelecionavel, 'instrucao')}>${ex.palavraSelecionavel.instrucao ? renderFraseComDestaque(ex.palavraSelecionavel.instrucao, ex.palavraSelecionavel.instrucaoDestaque) : 'Selecione a palavra abaixo:'}</p>
+          <p class="passo-caixa-inline"${estiloTextoInline(ex.palavraSelecionavel, 'instrucao')}>${ex.palavraSelecionavel.instrucao ? renderFraseComDestaque(ex.palavraSelecionavel.instrucao, ex.palavraSelecionavel.instrucaoDestaque, ex.palavraSelecionavel.instrucaoDestaqueNegrito) : 'Selecione a palavra abaixo:'}</p>
         </div>
         <div class="frase-anotada-wrap"><div class="frase-anotada" id="exemploPalavraSelecionavel" style="grid-template-columns:repeat(${ex.palavraSelecionavel.sentenca.length},auto)"></div></div>
       </div>` : ''}
@@ -867,7 +875,7 @@ function mostrarExemplo(aula, introIdx, i) {
       <div class="passo-caixa">
         <div class="passo-caixa-cabecalho">
           <div class="passo-caixa-icone"><svg viewBox="0 0 24 24" width="22" height="22">${RESUMO_ICONES.tarefa('#4A80F0')}</svg></div>
-          <p class="passo-caixa-inline"${estiloTextoInline(ex.palavraSelecionavelMultipla, 'instrucao')}>${ex.palavraSelecionavelMultipla.instrucao ? renderFraseComDestaque(ex.palavraSelecionavelMultipla.instrucao, ex.palavraSelecionavelMultipla.instrucaoDestaque) : 'Selecione as palavras abaixo:'}</p>
+          <p class="passo-caixa-inline"${estiloTextoInline(ex.palavraSelecionavelMultipla, 'instrucao')}>${ex.palavraSelecionavelMultipla.instrucao ? renderFraseComDestaque(ex.palavraSelecionavelMultipla.instrucao, ex.palavraSelecionavelMultipla.instrucaoDestaque, ex.palavraSelecionavelMultipla.instrucaoDestaqueNegrito) : 'Selecione as palavras abaixo:'}</p>
         </div>
         <div class="frase-anotada-wrap"><div class="frase-anotada" id="exemploPalavraSelecionavelMultipla" style="grid-template-columns:repeat(${ex.palavraSelecionavelMultipla.sentenca.length},auto)"></div></div>
       </div>` : ''}
@@ -875,17 +883,17 @@ function mostrarExemplo(aula, introIdx, i) {
       <div class="passo-caixa">
         <div class="passo-caixa-cabecalho">
           <div class="passo-caixa-icone"><svg viewBox="0 0 24 24" width="22" height="22">${RESUMO_ICONES.tarefa('#4A80F0')}</svg></div>
-          <p class="passo-caixa-inline"${estiloTextoInline(ex.palavraMultiplosRotulos, 'instrucao')}>${ex.palavraMultiplosRotulos.instrucao ? renderFraseComDestaque(ex.palavraMultiplosRotulos.instrucao, ex.palavraMultiplosRotulos.instrucaoDestaque) : 'Classifique cada palavra:'}</p>
+          <p class="passo-caixa-inline"${estiloTextoInline(ex.palavraMultiplosRotulos, 'instrucao')}>${ex.palavraMultiplosRotulos.instrucao ? renderFraseComDestaque(ex.palavraMultiplosRotulos.instrucao, ex.palavraMultiplosRotulos.instrucaoDestaque, ex.palavraMultiplosRotulos.instrucaoDestaqueNegrito) : 'Classifique cada palavra:'}</p>
         </div>
         <div class="frase-anotada-wrap"><div class="frase-anotada" id="exemploPalavraMultiplosRotulos" style="grid-template-columns:repeat(${ex.palavraMultiplosRotulos.sentenca.length},auto)"></div></div>
       </div>` : ''}
       ${ex.palavraPointLabelExemplo ? `
-      ${ex.palavraPointLabelExemplo.titulo ? `<p class="point-label-titulo"${estiloTextoInline(ex.palavraPointLabelExemplo, 'titulo')}>${renderFraseComDestaque(ex.palavraPointLabelExemplo.titulo, ex.palavraPointLabelExemplo.tituloDestaque)}</p>` : ''}
-      ${ex.palavraPointLabelExemplo.subtitulo ? `<p class="point-label-subtitulo"${estiloTextoInline(ex.palavraPointLabelExemplo, 'subtitulo')}>${renderFraseComDestaque(ex.palavraPointLabelExemplo.subtitulo, ex.palavraPointLabelExemplo.subtituloDestaque)}</p>` : ''}
+      ${ex.palavraPointLabelExemplo.titulo ? `<p class="point-label-titulo"${estiloTextoInline(ex.palavraPointLabelExemplo, 'titulo')}>${renderFraseComDestaque(ex.palavraPointLabelExemplo.titulo, ex.palavraPointLabelExemplo.tituloDestaque, ex.palavraPointLabelExemplo.tituloDestaqueNegrito)}</p>` : ''}
+      ${ex.palavraPointLabelExemplo.subtitulo ? `<p class="point-label-subtitulo"${estiloTextoInline(ex.palavraPointLabelExemplo, 'subtitulo')}>${renderFraseComDestaque(ex.palavraPointLabelExemplo.subtitulo, ex.palavraPointLabelExemplo.subtituloDestaque, ex.palavraPointLabelExemplo.subtituloDestaqueNegrito)}</p>` : ''}
       <div class="passo-caixa">
         <div class="passo-caixa-cabecalho">
           <div class="passo-caixa-icone"><svg viewBox="0 0 24 24" width="22" height="22">${RESUMO_ICONES.tarefa('#4A80F0')}</svg></div>
-          <p class="passo-caixa-inline"${estiloTextoInline(ex.palavraPointLabelExemplo, 'instrucao')}>${ex.palavraPointLabelExemplo.instrucao ? renderFraseComDestaque(ex.palavraPointLabelExemplo.instrucao, ex.palavraPointLabelExemplo.instrucaoDestaque) : 'Exemplo:'}</p>
+          <p class="passo-caixa-inline"${estiloTextoInline(ex.palavraPointLabelExemplo, 'instrucao')}>${ex.palavraPointLabelExemplo.instrucao ? renderFraseComDestaque(ex.palavraPointLabelExemplo.instrucao, ex.palavraPointLabelExemplo.instrucaoDestaque, ex.palavraPointLabelExemplo.instrucaoDestaqueNegrito) : 'Exemplo:'}</p>
         </div>
         <div class="frase-anotada-wrap"><div class="frase-anotada" style="grid-template-columns:repeat(${ex.palavraPointLabelExemplo.sentenca.length},auto)">
           ${ex.palavraPointLabelExemplo.sentenca.map((palavra, idx) => {
@@ -902,9 +910,9 @@ function mostrarExemplo(aula, introIdx, i) {
       <div class="card-imagem">
         ${ex.cardImagem.imagemUrl ? `<img class="card-imagem-img" src="${ex.cardImagem.imagemUrl}" alt="">` : ''}
         ${(ex.cardImagem.titulo || ex.cardImagem.subtitulo || ex.cardImagem.texto) ? `<div class="card-imagem-corpo">
-          ${ex.cardImagem.titulo ? `<p class="card-imagem-titulo"${estiloTextoInline(ex.cardImagem, 'titulo')}>${renderFraseComDestaque(ex.cardImagem.titulo, ex.cardImagem.tituloDestaque)}</p>` : ''}
-          ${ex.cardImagem.subtitulo ? `<p class="card-imagem-subtitulo"${estiloTextoInline(ex.cardImagem, 'subtitulo')}>${renderFraseComDestaque(ex.cardImagem.subtitulo, ex.cardImagem.subtituloDestaque)}</p>` : ''}
-          ${ex.cardImagem.texto ? `<p class="card-imagem-texto"${estiloTextoInline(ex.cardImagem, 'texto')}>${renderFraseComDestaque(ex.cardImagem.texto, ex.cardImagem.textoDestaque)}</p>` : ''}
+          ${ex.cardImagem.titulo ? `<p class="card-imagem-titulo"${estiloTextoInline(ex.cardImagem, 'titulo')}>${renderFraseComDestaque(ex.cardImagem.titulo, ex.cardImagem.tituloDestaque, ex.cardImagem.tituloDestaqueNegrito)}</p>` : ''}
+          ${ex.cardImagem.subtitulo ? `<p class="card-imagem-subtitulo"${estiloTextoInline(ex.cardImagem, 'subtitulo')}>${renderFraseComDestaque(ex.cardImagem.subtitulo, ex.cardImagem.subtituloDestaque, ex.cardImagem.subtituloDestaqueNegrito)}</p>` : ''}
+          ${ex.cardImagem.texto ? `<p class="card-imagem-texto"${estiloTextoInline(ex.cardImagem, 'texto')}>${renderFraseComDestaque(ex.cardImagem.texto, ex.cardImagem.textoDestaque, ex.cardImagem.textoDestaqueNegrito)}</p>` : ''}
         </div>` : ''}
       </div>` : ''}
       ${htmlCardAudio(ex.audio)}
@@ -915,10 +923,10 @@ function mostrarExemplo(aula, introIdx, i) {
         <div class="flashcard" id="flashcardCard" role="button" tabindex="0" aria-label="Toque para virar o card">
           <div class="flashcard-inner">
             <div class="flashcard-face flashcard-frente">
-              <p class="flashcard-texto"${estiloTextoInline(ex.flashcard, 'frente')}>${renderFraseComDestaque(ex.flashcard.frente, ex.flashcard.frenteDestaque)}</p>
+              <p class="flashcard-texto"${estiloTextoInline(ex.flashcard, 'frente')}>${renderFraseComDestaque(ex.flashcard.frente, ex.flashcard.frenteDestaque, ex.flashcard.frenteDestaqueNegrito)}</p>
             </div>
             <div class="flashcard-face flashcard-verso">
-              <p class="flashcard-texto"${estiloTextoInline(ex.flashcard, 'verso')}>${renderFraseComDestaque(ex.flashcard.verso, ex.flashcard.versoDestaque)}</p>
+              <p class="flashcard-texto"${estiloTextoInline(ex.flashcard, 'verso')}>${renderFraseComDestaque(ex.flashcard.verso, ex.flashcard.versoDestaque, ex.flashcard.versoDestaqueNegrito)}</p>
             </div>
           </div>
         </div>
@@ -1188,7 +1196,7 @@ function mostrarResumo(aula, introIdx) {
   opcoesEl.innerHTML = `
     <div class="resumo-card">
       ${marcarCartaoHtml('resumo')}
-      <p class="resumo-titulo"${estiloTextoInline(res, 'titulo')}>${renderFraseComDestaque(res.titulo || '', res.tituloDestaque)}</p>
+      <p class="resumo-titulo"${estiloTextoInline(res, 'titulo')}>${renderFraseComDestaque(res.titulo || '', res.tituloDestaque, res.tituloDestaqueNegrito)}</p>
       ${(res.itens || []).map(item => `
       <div class="resumo-item">
         <div class="resumo-icone" style="background:${item.corFundo}">
@@ -1197,8 +1205,8 @@ function mostrarResumo(aula, introIdx) {
           </svg>
         </div>
         <div class="resumo-item-info">
-          <span class="resumo-item-titulo"${estiloTextoInline(item, 'titulo', `color:${item.cor}`)}>${renderFraseComDestaque(item.titulo || '', item.tituloDestaque)}</span>
-          <span class="resumo-item-exemplos"${estiloTextoInline(item, 'exemplos')}>${renderFraseComDestaque(item.exemplos || '', item.exemplosDestaque)}</span>
+          <span class="resumo-item-titulo"${estiloTextoInline(item, 'titulo', `color:${item.cor}`)}>${renderFraseComDestaque(item.titulo || '', item.tituloDestaque, item.tituloDestaqueNegrito)}</span>
+          <span class="resumo-item-exemplos"${estiloTextoInline(item, 'exemplos')}>${renderFraseComDestaque(item.exemplos || '', item.exemplosDestaque, item.exemplosDestaqueNegrito)}</span>
         </div>
       </div>`).join('')}
     </div>`;
@@ -1220,7 +1228,7 @@ function mostrarLicao(aula, introIdx) {
   opcoesEl.innerHTML = `
     <div class="resumo-card">
       ${marcarCartaoHtml('licao')}
-      <p class="resumo-titulo"${estiloTextoInline(lic, 'titulo')}>${renderFraseComDestaque(lic.titulo || '', lic.tituloDestaque)}</p>
+      <p class="resumo-titulo"${estiloTextoInline(lic, 'titulo')}>${renderFraseComDestaque(lic.titulo || '', lic.tituloDestaque, lic.tituloDestaqueNegrito)}</p>
       <div class="licao-corpo">${lic.html || ''}</div>
     </div>`;
   ativarBotaoMarcar();
@@ -1313,10 +1321,10 @@ function mostrarChecagem(aula, introIdx, dados, checagemIdx, origemAulaId = aula
   // Checagens com "banco" (reordenar) não mostram subtítulo — o "sentenca" (clicar na palavra)
   // mostra normalmente quando preenchido (descrição opcional, definida no Construtor de Aulas).
   opcoesEl.innerHTML = marcarCartaoHtml(`checagem${checagemIdx}`) + (dados.invertido
-    ? `<p class="questao-subtitulo checagem-pergunta"${estiloTextoInline(dados, 'subtitulo')}>${renderFraseComDestaque(dados.subtitulo || '', dados.subtituloDestaque)}</p>
-       <h2 class="questao-titulo checagem-titulo"${estiloTextoInline(dados, 'titulo')}>${renderFraseComDestaque(dados.titulo || '', dados.tituloDestaque)}</h2>`
-    : `<h2 class="questao-titulo checagem-instrucao"${estiloTextoInline(dados, 'titulo')}>${renderFraseComDestaque(dados.titulo || '', dados.tituloDestaque)}</h2>` +
-      (dados.banco ? '' : `<p class="questao-subtitulo checagem-frase"${estiloTextoInline(dados, 'subtitulo')}>${renderFraseComDestaque(dados.subtitulo || '', dados.subtituloDestaque)}</p>`)) +
+    ? `<p class="questao-subtitulo checagem-pergunta"${estiloTextoInline(dados, 'subtitulo')}>${renderFraseComDestaque(dados.subtitulo || '', dados.subtituloDestaque, dados.subtituloDestaqueNegrito)}</p>
+       <h2 class="questao-titulo checagem-titulo"${estiloTextoInline(dados, 'titulo')}>${renderFraseComDestaque(dados.titulo || '', dados.tituloDestaque, dados.tituloDestaqueNegrito)}</h2>`
+    : `<h2 class="questao-titulo checagem-instrucao"${estiloTextoInline(dados, 'titulo')}>${renderFraseComDestaque(dados.titulo || '', dados.tituloDestaque, dados.tituloDestaqueNegrito)}</h2>` +
+      (dados.banco ? '' : `<p class="questao-subtitulo checagem-frase"${estiloTextoInline(dados, 'subtitulo')}>${renderFraseComDestaque(dados.subtitulo || '', dados.subtituloDestaque, dados.subtituloDestaqueNegrito)}</p>`)) +
     (dados.multiplosRotulos ? '<div class="mr-select-wrap" id="mrSelectWrap"></div>'
       : dados.predicado ? '<div class="tri-select-wrap" id="triSelectWrap"></div>'
       : dados.sujeito ? '<div class="dual-select-wrap" id="dualSelectWrap"></div>'
@@ -1406,7 +1414,7 @@ function mostrarChecagem(aula, introIdx, dados, checagemIdx, origemAulaId = aula
       if ((dados.opcoesNegrito || [])[i]) partesEstiloOpcao.push('font-weight:700');
       if ((dados.opcoesItalico || [])[i]) partesEstiloOpcao.push('font-style:italic');
       const estiloOpcao = partesEstiloOpcao.length ? ` style="${partesEstiloOpcao.join(';')}"` : '';
-      btn.innerHTML = `<span class="letra">${LETRAS[i]}</span><span class="opcao-texto"${estiloOpcao}>${renderFraseComDestaque(texto, (dados.opcoesDestaque || [])[i])}</span>`;
+      btn.innerHTML = `<span class="letra">${LETRAS[i]}</span><span class="opcao-texto"${estiloOpcao}>${renderFraseComDestaque(texto, (dados.opcoesDestaque || [])[i], (dados.opcoesDestaqueNegrito || [])[i])}</span>`;
       opcoesEl.appendChild(btn);
     });
   }
