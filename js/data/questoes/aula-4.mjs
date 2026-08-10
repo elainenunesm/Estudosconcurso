@@ -18,7 +18,7 @@ window.AULA_DATA = {
 
   antesComecar: {
   titulo: "Regime Jurídico Administrativo",
-  descricao: "Nesta aula você vai entender o que é o Direito Administrativo, qual o seu objetivo e o que é o Regime Jurídico Administrativo.",
+  descricao: "Nesta aula é a continuação da aula 1. vai entender o que é o Direito Administrativo, qual o seu objetivo e o que é o Regime Jurídico Administrativo.",
   aprender: "",
   importancia: "",
   descricaoDestaque: [],
