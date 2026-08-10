@@ -1,7 +1,7 @@
 {
-  "name": "Minhas Aulas",
-  "short_name": "Minhas Aulas",
-  "description": "Gerado pelo Construtor de Aulas",
+  "name": "Metodo Feyman",
+  "short_name": "Metodo Feyman",
+  "description": "Geramd",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
