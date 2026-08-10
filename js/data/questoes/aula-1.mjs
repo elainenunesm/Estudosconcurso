@@ -22,7 +22,8 @@ window.AULA_DATA = {
   aprender: "",
   importancia: "",
   tituloDestaque: [],
-  descricaoDestaque: []
+  descricaoDestaque: [],
+  tituloNegrito: true
 },
 
   exemplo: [],
