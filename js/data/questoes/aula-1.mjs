@@ -240,8 +240,8 @@ window.AULA_DATA = {
     feedbackCorreto: "",
     feedbackErrado: "",
     opcoes: [
-      "",
-      ""
+      "Ação",
+      "Estado"
     ],
     opcoesNegrito: [],
     opcoesItalico: [],
