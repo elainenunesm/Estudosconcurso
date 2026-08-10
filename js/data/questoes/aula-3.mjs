@@ -142,7 +142,9 @@ window.AULA_DATA = {
         tipo: "tarefa",
         cor: "#5B2BCB",
         corFundo: "#f0eaff",
-        texto: "✅ Pavimentar uma rua."
+        texto: "✅ Pavimentar uma rua.",
+        textoDestaque: [],
+        textoDestaqueNegrito: []
       }
     ],
     descricao: "",
