@@ -21,7 +21,8 @@ window.AULA_DATA = {
   descricao: "Nesta aula você vai dar o primeiro passo para entender a estrutura das frases.",
   aprender: "",
   importancia: "",
-  tituloDestaque: []
+  tituloDestaque: [],
+  descricaoDestaque: []
 },
 
   exemplo: [],
