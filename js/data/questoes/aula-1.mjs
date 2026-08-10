@@ -69,9 +69,10 @@ window.AULA_DATA = {
     tipo: "acao",
     texto: "Por exemplo, ao ouvir a palavra correr, imaginamos alguém se movimentando rapidamente de um lugar para outro.",
     conclusao: "",
-    obs: "",
+    obs: "Isso representa uma ação.",
     pontos: [],
-    textoDestaque: []
+    textoDestaque: [],
+    obsDestaque: []
   }
 ],
 
