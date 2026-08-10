@@ -21,6 +21,7 @@ window.AULA_DATA = {
   "checagem0",
   "checagem1",
   "checagem2",
+  "checagem3",
   "resumo",
   "licao"
 ],
@@ -232,6 +233,25 @@ window.AULA_DATA = {
       1
     ],
     subtitulo: "\"Ana está muito animada com a viagem.\""
+  },
+  {
+    titulo: "",
+    correta: 0,
+    feedbackCorreto: "",
+    feedbackErrado: "",
+    opcoes: [
+      "",
+      ""
+    ],
+    opcoesNegrito: [],
+    opcoesItalico: [],
+    opcoesDestaque: [
+      [],
+      []
+    ],
+    invertido: false,
+    dificuldade: "Fácil",
+    subtituloDestaque: []
   }
 ],
 
