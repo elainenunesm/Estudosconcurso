@@ -229,11 +229,17 @@ window.AULA_DATA = {
     feedbackErrado: "",
     opcoes: [
       "Concede poderes à Administração Pública, mas não estabelece limitações.",
-      "Estabelece apenas obrigações para os agentes públicos."
+      "Estabelece apenas obrigações para os agentes públicos.",
+      "É o conjunto de regras e princípios que estabelece poderes e também limites para a atuação da Administração Pública."
     ],
-    opcoesNegrito: [],
-    opcoesItalico: [],
+    opcoesNegrito: [
+      false
+    ],
+    opcoesItalico: [
+      false
+    ],
     opcoesDestaque: [
+      [],
       [],
       []
     ],
