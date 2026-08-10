@@ -175,7 +175,7 @@ window.AULA_DATA = {
     invertido: true
   },
   {
-    titulo: "\"O cachorro correu pelo jardim.\"",
+    titulo: "O verbo em destaque indica:",
     correta: 0,
     feedbackCorreto: "Correto!\n\"Correu\" indica uma ação — um movimento realizado pelo cachorro.",
     feedbackErrado: "Incorreto.\n\"Correu\" indica uma ação — um movimento realizado pelo cachorro.\n\nAlternativa A é a correta.",
