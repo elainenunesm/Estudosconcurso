@@ -161,7 +161,7 @@ window.AULA_DATA = {
     feedbackCorreto: "",
     feedbackErrado: "",
     opcoes: [
-      "",
+      "Aumentar os poderes dos agentes públicos.",
       ""
     ],
     opcoesNegrito: [],
