@@ -100,9 +100,11 @@ window.AULA_DATA = {
     tipo: "mudanca",
     texto: "Ao ouvir a palavra ficou, imaginamos alguém que alterou o seu estado original.",
     conclusao: "",
-    obs: "",
+    obs: "Isso representa uma mudança de estado.",
     pontos: [],
-    textoDestaque: []
+    textoDestaque: [],
+    obsDestaque: [],
+    obsNegrito: true
   }
 ],
 
