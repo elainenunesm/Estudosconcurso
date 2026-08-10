@@ -98,8 +98,8 @@ window.AULA_DATA = {
   {
     tipo: "dica",
     texto: "Esses poderes não existem por acaso — eles fazem parte do Regime Jurídico Administrativo.",
-    conclusao: "\nRegime Jurídico Administrativo:\nÉ o conjunto de regras e princípios que estabelece os poderes da Administração Pública e também os limites da sua atuação.\n\n\nOu seja, ao mesmo tempo que a Administração recebe poderes, ela também recebe obrigações e limitações.",
-    obs: "",
+    conclusao: "\nRegime Jurídico Administrativo:\nÉ o conjunto de regras e princípios que estabelece os poderes da Administração Pública e também os limites da sua atuação.\n\n\n",
+    obs: "Ou seja, ao mesmo tempo que a Administração recebe poderes, ela também recebe obrigações e limitações.",
     pontos: [],
     textoDestaque: [
       11,
