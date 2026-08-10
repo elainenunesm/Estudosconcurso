@@ -12,8 +12,8 @@ window.AULA_DATA = {
   // Ordem das telas na sequência de estudo — definida em "Estrutura das telas".
   ordem: [
   "antesComecar",
-  "exemplo0",
-  "lista0"
+  "lista0",
+  "exemplo0"
 ],
 
   antesComecar: {
@@ -70,7 +70,7 @@ window.AULA_DATA = {
 
   lista: [
   {
-    titulo: "hdrfhbdrhdr",
+    titulo: "O Estado precisa prestar diversos serviços para a população:",
     itens: [
       {
         tipo: "livro",
