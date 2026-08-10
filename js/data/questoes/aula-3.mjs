@@ -191,21 +191,25 @@ window.AULA_DATA = {
   },
   {
     titulo: "Um guarda de trânsito pode aplicar uma multa porque:",
-    correta: 0,
+    correta: 2,
     feedbackCorreto: "",
     feedbackErrado: "",
     opcoes: [
       "Todo cidadão possui esse poder.",
       "O guarda pode fazer tudo que considerar necessário.",
-      "A lei concede esse poder ao agente público."
+      "A lei concede esse poder ao agente público.",
+      "A Administração Pública não precisa seguir regras."
     ],
     opcoesNegrito: [
+      false,
       false
     ],
     opcoesItalico: [
+      false,
       false
     ],
     opcoesDestaque: [
+      [],
       [],
       [],
       []
