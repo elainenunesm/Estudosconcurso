@@ -22,6 +22,7 @@ window.AULA_DATA = {
   "checagem1",
   "checagem2",
   "checagem3",
+  "checagem4",
   "resumo",
   "licao"
 ],
@@ -271,6 +272,23 @@ window.AULA_DATA = {
     tituloDestaque: [],
     subtitulo: "\"O garoto cresceu cinco centímetros em seis meses.\"",
     tituloNegrito: true
+  },
+  {
+    titulo: "O verbo em destaque indica:",
+    correta: 0,
+    feedbackCorreto: "",
+    feedbackErrado: "",
+    opcoes: [
+      "",
+      ""
+    ],
+    opcoesNegrito: [],
+    opcoesItalico: [],
+    opcoesDestaque: [
+      [],
+      []
+    ],
+    dificuldade: "Fácil"
   }
 ],
 
