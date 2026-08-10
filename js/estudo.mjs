@@ -375,13 +375,17 @@ function renderFraseComDestaque(texto, indices) {
   }).join('<br>');
 }
 
-/** Monta o atributo style="..." (negrito/itálico) pro texto inteiro de um campo, a partir dos
- * flags `${campo}Negrito`/`${campo}Italico` marcados no Construtor de Aulas. */
+/** Monta o atributo style="..." (negrito/itálico/alinhamento) pro texto inteiro de um campo, a
+ * partir dos flags `${campo}Negrito`/`${campo}Italico`/`${campo}Alinhamento` marcados no
+ * Construtor de Aulas. */
 function estiloTextoInline(obj, campo, extraCss) {
   const partes = [];
   if (extraCss) partes.push(extraCss);
   if (obj[`${campo}Negrito`]) partes.push('font-weight:700');
   if (obj[`${campo}Italico`]) partes.push('font-style:italic');
+  const alinhamento = obj[`${campo}Alinhamento`];
+  if (alinhamento === 'centro') partes.push('text-align:center');
+  else if (alinhamento === 'direita') partes.push('text-align:right');
   return partes.length ? ` style="${partes.join(';')}"` : '';
 }
 
