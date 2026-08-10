@@ -192,7 +192,7 @@ window.AULA_DATA = {
   {
     titulo: "Um guarda de trânsito pode aplicar uma multa porque:",
     correta: 2,
-    feedbackCorreto: "",
+    feedbackCorreto: "Correto.\n\nGabarito: C",
     feedbackErrado: "",
     opcoes: [
       "Todo cidadão possui esse poder.",
