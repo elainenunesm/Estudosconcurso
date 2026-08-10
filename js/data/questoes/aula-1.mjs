@@ -222,7 +222,8 @@ window.AULA_DATA = {
     ],
     dificuldade: "Fácil",
     tituloDestaque: [],
-    subtituloDestaque: []
+    subtituloDestaque: [],
+    subtitulo: "\"Ana está muito animada com a viagem.\""
   }
 ],
 
