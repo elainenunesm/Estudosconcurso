@@ -17,10 +17,12 @@ window.AULA_DATA = {
 ],
 
   antesComecar: {
-  titulo: "",
+  titulo: "teste",
   descricao: "",
   aprender: "",
-  importancia: ""
+  importancia: "",
+  tituloDestaque: [],
+  tituloDestaqueNegrito: []
 },
 
   exemplo: [],
