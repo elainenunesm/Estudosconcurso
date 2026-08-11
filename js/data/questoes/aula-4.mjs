@@ -209,7 +209,14 @@ window.AULA_DATA = {
   {
     titulo: "",
     textoAntes: "Princípio da Indisponibilidade do Interesse Público\n\nO administrador não é dono dos bens públicos — ele apenas administra aquilo que pertence à sociedade. Por isso, ele não pode:",
-    itens: [],
+    itens: [
+      {
+        tipo: "tarefa",
+        cor: "#5B2BCB",
+        corFundo: "#f0eaff",
+        texto: "❌ Doar um bem público para um amigo."
+      }
+    ],
     descricao: "",
     textoAntesDestaque: [],
     textoAntesDestaqueNegrito: []
