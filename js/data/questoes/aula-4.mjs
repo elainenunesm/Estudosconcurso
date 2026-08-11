@@ -12,8 +12,7 @@ window.AULA_DATA = {
   // Ordem das telas na sequência de estudo — definida em "Estrutura das telas".
   ordem: [
   "antesComecar",
-  "resumo",
-  "licao"
+  "lista0"
 ],
 
   antesComecar: {
@@ -46,7 +45,15 @@ window.AULA_DATA = {
     html: ``,
   },
 
-  lista: [],
+  lista: [
+  {
+    titulo: "Esses poderes são chamados de prerrogativas administrativas. Alguns exemplos:",
+    itens: [],
+    descricao: "",
+    tituloDestaque: [],
+    tituloDestaqueNegrito: []
+  }
+],
 
   questoes: [],
 };
