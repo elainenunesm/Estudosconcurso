@@ -15,7 +15,7 @@ window.AULA_DATA = {
   "lista0",
   "lista1",
   "exemplo0",
-  "exemplo1"
+  "lista2"
 ],
 
   antesComecar: {
@@ -74,13 +74,6 @@ window.AULA_DATA = {
       tituloDestaque: [],
       tituloDestaqueNegrito: []
     }
-  },
-  {
-    tipo: "dica",
-    texto: "",
-    conclusao: "",
-    obs: "",
-    pontos: []
   }
 ],
 
@@ -212,6 +205,14 @@ window.AULA_DATA = {
       47,
       46
     ]
+  },
+  {
+    titulo: "",
+    textoAntes: "Princípio da Indisponibilidade do Interesse Público\n\nO administrador não é dono dos bens públicos — ele apenas administra aquilo que pertence à sociedade. Por isso, ele não pode:",
+    itens: [],
+    descricao: "",
+    textoAntesDestaque: [],
+    textoAntesDestaqueNegrito: []
   }
 ],
 
