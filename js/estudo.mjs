@@ -1152,6 +1152,8 @@ const RESUMO_ICONES = {
   predVerboNominal: cor => `<path fill="none" stroke="${cor}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M9 17H7a5 5 0 1 1 0-10h2M15 7h2a5 5 0 1 1 0 10h-2M8 12h8"/>`,
   semSujeito: cor => `<line x1="-1" y1="6"  x2="2" y2="6"  stroke="${cor}" stroke-width="1.6" stroke-linecap="round" opacity="0.5"/><line x1="-1" y1="10" x2="2" y2="10" stroke="${cor}" stroke-width="1.6" stroke-linecap="round" opacity="0.5"/><line x1="-1" y1="14" x2="2" y2="14" stroke="${cor}" stroke-width="1.6" stroke-linecap="round" opacity="0.5"/><circle cx="11" cy="8" r="4" fill="none" stroke="${cor}" stroke-width="1.8"/><path fill="none" stroke="${cor}" stroke-width="1.8" stroke-linecap="round" d="M4 21v-1a6 6 0 0 1 6-6h1.5"/><circle cx="18" cy="17" r="5" fill="none" stroke="${cor}" stroke-width="1.7"/><line x1="16.1" y1="15.1" x2="19.9" y2="18.9" stroke="${cor}" stroke-width="1.7" stroke-linecap="round"/><line x1="19.9" y1="15.1" x2="16.1" y2="18.9" stroke="${cor}" stroke-width="1.7" stroke-linecap="round"/>`,
   livro: cor => `<path fill="none" stroke="${cor}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path fill="none" stroke="${cor}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>`,
+  certo: cor => `<path fill="none" stroke="${cor}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>`,
+  errado: cor => `<path fill="none" stroke="${cor}" stroke-width="2.5" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/>`,
 };
 
 function mostrarInfinitivo(aula, introIdx) {
@@ -1228,8 +1230,9 @@ function mostrarLista(aula, introIdx, i) {
   opcoesEl.innerHTML = `
     <div class="resumo-card">
       ${marcarCartaoHtml(`lista${i}`)}
+      ${li.icone ? `<div class="lista-icone-topo" style="background:${li.icone.corFundo || '#eef2ff'};color:${li.icone.cor || '#4A80F0'}"><svg viewBox="0 0 24 24" width="32" height="32">${iconeExternoOuNulo(li.icone) || (RESUMO_ICONES[li.icone.tipo] ? RESUMO_ICONES[li.icone.tipo](li.icone.cor || '#4A80F0') : '')}</svg></div>` : ''}
       ${li.titulo ? `<p class="resumo-titulo"${estiloTextoInline(li, 'titulo')}>${renderFraseComDestaque(li.titulo || '', li.tituloDestaque, li.tituloDestaqueNegrito)}</p>` : ''}
-      ${li.textoAntes ? `<p class="lista-descricao"${estiloTextoInline(li, 'textoAntes')}>${renderFraseComDestaque(li.textoAntes, li.textoAntesDestaque, li.textoAntesDestaqueNegrito)}</p>` : ''}
+      ${li.textoAntes ? `<p class="lista-descricao lista-texto-antes"${estiloTextoInline(li, 'textoAntes')}>${renderFraseComDestaque(li.textoAntes, li.textoAntesDestaque, li.textoAntesDestaqueNegrito)}</p>` : ''}
       ${(li.itens || []).map(item => `
       <div class="resumo-item">
         <div class="resumo-icone" style="background:${item.corFundo}">

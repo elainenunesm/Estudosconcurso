@@ -199,7 +199,9 @@ body {
   color: #4A80F0;
 }
 
-/* TELA DE INTRODUÇÃO (Antes de começar) */
+/* TELA DE INTRODUÇÃO (Antes de começar) — padding-right reserva espaço pro
+   .btn-marcar-cartao (marca-página no canto superior direito) não sobrepor o
+   texto, igual já é feito em .checagem-pergunta/.checagem-instrucao. */
 .intro-card { position: relative; }
 .intro-label {
   display: block;
@@ -209,6 +211,7 @@ body {
   letter-spacing: 0.08em;
   color: #4A80F0;
   margin-bottom: 8px;
+  padding-right: 48px;
 }
 
 .intro-titulo {
@@ -217,6 +220,7 @@ body {
   color: #1a1a2e;
   line-height: 1.25;
   margin-bottom: 14px;
+  padding-right: 48px;
 }
 
 .intro-desc {
@@ -286,7 +290,7 @@ body {
    telas de conteúdo (definição, contexto, exemplo). */
 .btn-marcar-cartao {
   position: absolute;
-  top: -6px;
+  top: -14px;
   right: 10px;
   width: 36px;
   height: 44px;
@@ -984,10 +988,13 @@ body {
   position: relative;
 }
 
+/* padding-right reserva espaço pro .btn-marcar-cartao (canto superior direito)
+   não sobrepor o texto — mesmo motivo de .intro-titulo/.checagem-pergunta. */
 .resumo-titulo {
   font-size: 18px;
   color: #1a1a2e;
   margin-bottom: 4px;
+  padding-right: 48px;
 }
 
 .resumo-item {
@@ -1037,6 +1044,20 @@ body {
   color: #4b5563;
   line-height: 1.6;
   text-align: justify;
+}
+
+/* Só o texto ANTES da lista fica perto o bastante do topo do card pra precisar
+   reservar espaço do .btn-marcar-cartao — o de depois já está bem abaixo dele. */
+.lista-texto-antes { padding-right: 48px; }
+
+.lista-icone-topo {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 /* TELA DE IDENTIFICAÇÃO */
