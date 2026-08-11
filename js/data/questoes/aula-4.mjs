@@ -14,7 +14,8 @@ window.AULA_DATA = {
   "antesComecar",
   "lista0",
   "lista1",
-  "exemplo0"
+  "exemplo0",
+  "exemplo1"
 ],
 
   antesComecar: {
@@ -73,6 +74,13 @@ window.AULA_DATA = {
       tituloDestaque: [],
       tituloDestaqueNegrito: []
     }
+  },
+  {
+    tipo: "dica",
+    texto: "",
+    conclusao: "",
+    obs: "",
+    pontos: []
   }
 ],
 
