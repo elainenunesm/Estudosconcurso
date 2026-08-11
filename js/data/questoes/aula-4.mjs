@@ -12,7 +12,8 @@ window.AULA_DATA = {
   // Ordem das telas na sequência de estudo — definida em "Estrutura das telas".
   ordem: [
   "antesComecar",
-  "lista0"
+  "lista0",
+  "lista1"
 ],
 
   antesComecar: {
@@ -93,6 +94,14 @@ window.AULA_DATA = {
       5,
       0
     ]
+  },
+  {
+    titulo: "",
+    textoAntes: "Não — a Administração não pode fazer qualquer coisa.\n\nOs poderes concedidos pela lei possuem limites, que existem para proteger o patrimônio e o interesse público. O administrador:",
+    itens: [],
+    descricao: "",
+    textoAntesDestaque: [],
+    textoAntesDestaqueNegrito: []
   }
 ],
 
