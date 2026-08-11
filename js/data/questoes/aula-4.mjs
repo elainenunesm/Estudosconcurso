@@ -56,6 +56,12 @@ window.AULA_DATA = {
         texto: "Aplicar multas.",
         textoDestaque: [],
         textoDestaqueNegrito: []
+      },
+      {
+        tipo: "tarefa",
+        cor: "#5B2BCB",
+        corFundo: "#f0eaff",
+        texto: ""
       }
     ],
     descricao: "",
