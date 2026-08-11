@@ -105,8 +105,12 @@ window.AULA_DATA = {
     textoAntes: "Se a administração concede poderes(prerrogativas), então, a administração pode fazer qualquer coisa, certo?\n\nNão — a Administração não pode fazer qualquer coisa.\n\nOs poderes concedidos pela lei possuem limites, que existem para proteger o patrimônio e o interesse público. \n\nO administrador:",
     itens: [],
     descricao: "",
-    textoAntesDestaque: [],
-    textoAntesDestaqueNegrito: []
+    textoAntesDestaque: [
+      4
+    ],
+    textoAntesDestaqueNegrito: [
+      4
+    ]
   }
 ],
 
