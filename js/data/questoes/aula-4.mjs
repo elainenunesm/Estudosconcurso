@@ -17,7 +17,8 @@ window.AULA_DATA = {
   "exemplo0",
   "lista2",
   "checagem0",
-  "checagem1"
+  "checagem1",
+  "checagem2"
 ],
 
   antesComecar: {
@@ -140,6 +141,36 @@ window.AULA_DATA = {
     dificuldade: "Fácil",
     tituloDestaque: [],
     tituloDestaqueNegrito: [],
+    tituloNegrito: true
+  },
+  {
+    titulo: "Um administrador decide doar um bem público para um amigo. Essa atitude é:",
+    correta: 0,
+    feedbackCorreto: "",
+    feedbackErrado: "",
+    opcoes: [
+      "Permitida, pois o administrador é responsável pelo bem.",
+      "",
+      "",
+      ""
+    ],
+    opcoesNegrito: [
+      false,
+      false
+    ],
+    opcoesItalico: [
+      false,
+      false
+    ],
+    opcoesDestaque: [
+      [],
+      [],
+      [],
+      []
+    ],
+    tituloDestaque: [],
+    tituloDestaqueNegrito: [],
+    dificuldade: "Fácil",
     tituloNegrito: true
   }
 ],
