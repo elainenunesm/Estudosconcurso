@@ -147,7 +147,7 @@ window.AULA_DATA = {
     titulo: "Um administrador decide doar um bem público para um amigo. Essa atitude é:",
     correta: 2,
     feedbackCorreto: "Correto.\n\nGabarito: C",
-    feedbackErrado: "",
+    feedbackErrado: "Incorreto.\n\nGabarito: C",
     opcoes: [
       "Permitida, pois o administrador é responsável pelo bem.",
       "Permitida quando o amigo prestar um serviço à sociedade.",
