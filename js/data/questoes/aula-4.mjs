@@ -16,7 +16,8 @@ window.AULA_DATA = {
   "lista1",
   "exemplo0",
   "lista2",
-  "checagem0"
+  "checagem0",
+  "checagem1"
 ],
 
   antesComecar: {
@@ -107,6 +108,26 @@ window.AULA_DATA = {
     dificuldade: "Fácil",
     subtituloDestaque: [],
     subtituloDestaqueNegrito: [],
+    tituloDestaque: [],
+    tituloDestaqueNegrito: [],
+    tituloNegrito: true
+  },
+  {
+    titulo: "O Princípio da Supremacia do Interesse Público significa que:",
+    correta: 0,
+    feedbackCorreto: "",
+    feedbackErrado: "",
+    opcoes: [
+      "",
+      ""
+    ],
+    opcoesNegrito: [],
+    opcoesItalico: [],
+    opcoesDestaque: [
+      [],
+      []
+    ],
+    dificuldade: "Fácil",
     tituloDestaque: [],
     tituloDestaqueNegrito: [],
     tituloNegrito: true
