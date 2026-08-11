@@ -38,7 +38,7 @@ const MODULOS = [
       },
       {
         id:      4,
-        titulo:  "Aula 2: Regime Jurídico Administrativo - Parte 2.",
+        titulo:  "Aula 2: Fundamentos do Regime Jurídico Administrativo - Parte 2.",
         arquivo: "aula-4",
         icone:   'padrao',
       }
