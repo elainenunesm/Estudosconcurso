@@ -134,7 +134,7 @@ body {
 .questao-area {
   height: 100%;
   overflow-y: auto;
-  padding: 34px 20px 12px;
+  padding: 24px 20px 12px;
 }
 
 .scroll-fade {
@@ -286,12 +286,16 @@ body {
   position: relative;
 }
 
-/* ETIQUETA "MARCAR PARA REVISÃO" — marca-página no lado esquerdo das
-   telas de conteúdo (definição, contexto, exemplo). */
+/* ETIQUETA "MARCAR PARA REVISÃO" — marca-página que fica de verdade "entrando"
+   pelo topo da tela, por cima do cabeçalho. position:fixed (em vez de
+   absolute) é proposital: um filho de .questao-area com position:absolute
+   fica preso dentro do overflow-y:auto dela e não escapa pra cima por mais
+   negativo que o "top" seja — fixed ignora esse recorte e usa a tela toda
+   como referência, então não fica preso/cortado. */
 .btn-marcar-cartao {
-  position: absolute;
-  top: -32px;
-  right: 10px;
+  position: fixed;
+  top: 8px;
+  right: 26px;
   width: 36px;
   height: 44px;
   padding: 0;
@@ -304,7 +308,7 @@ body {
   justify-content: center;
   cursor: pointer;
   color: #b9c6f0;
-  z-index: 2;
+  z-index: 15;
   transition: color 0.2s, transform 0.15s;
 }
 
