@@ -115,8 +115,8 @@ window.AULA_DATA = {
   {
     titulo: "O Princípio da Supremacia do Interesse Público significa que:",
     correta: 2,
-    feedbackCorreto: "Correto.\n\n",
-    feedbackErrado: "",
+    feedbackCorreto: "Correto.\n\nGabarito: C",
+    feedbackErrado: "Correto.\n\nGabarito: C",
     opcoes: [
       "O interesse do administrador sempre deve prevalecer.",
       "O interesse privado nunca pode ser considerado.",
