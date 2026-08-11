@@ -111,6 +111,14 @@ window.AULA_DATA = {
         texto: "Deve agir conforme a lei.",
         textoDestaque: [],
         textoDestaqueNegrito: []
+      },
+      {
+        tipo: "tarefa",
+        cor: "#5B2BCB",
+        corFundo: "#f0eaff",
+        texto: "Não pode usar o cargo para benefício próprio.",
+        textoDestaque: [],
+        textoDestaqueNegrito: []
       }
     ],
     descricao: "",
