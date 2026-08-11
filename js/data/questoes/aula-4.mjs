@@ -15,7 +15,8 @@ window.AULA_DATA = {
   "lista0",
   "lista1",
   "exemplo0",
-  "lista2"
+  "lista2",
+  "checagem0"
 ],
 
   antesComecar: {
@@ -77,7 +78,30 @@ window.AULA_DATA = {
   }
 ],
 
-  checagem: [],
+  checagem: [
+  {
+    titulo: "O que são prerrogativas administrativas?",
+    correta: 0,
+    feedbackCorreto: "",
+    feedbackErrado: "",
+    opcoes: [
+      "",
+      ""
+    ],
+    opcoesNegrito: [],
+    opcoesItalico: [],
+    opcoesDestaque: [
+      [],
+      []
+    ],
+    dificuldade: "Fácil",
+    subtituloDestaque: [],
+    subtituloDestaqueNegrito: [],
+    tituloDestaque: [],
+    tituloDestaqueNegrito: [],
+    tituloNegrito: true
+  }
+],
 
   resumo: {
   titulo: "",
