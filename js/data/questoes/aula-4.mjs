@@ -113,7 +113,8 @@ window.AULA_DATA = {
       12,
       13,
       28,
-      29
+      29,
+      33
     ],
     textoAntesDestaqueNegrito: [
       4,
