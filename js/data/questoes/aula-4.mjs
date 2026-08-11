@@ -106,10 +106,20 @@ window.AULA_DATA = {
     itens: [],
     descricao: "",
     textoAntesDestaque: [
-      4
+      4,
+      9,
+      10,
+      11,
+      12,
+      13
     ],
     textoAntesDestaqueNegrito: [
-      4
+      4,
+      12,
+      13,
+      9,
+      10,
+      11
     ]
   }
 ],
