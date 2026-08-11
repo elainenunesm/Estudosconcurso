@@ -364,8 +364,15 @@ window.AULA_DATA = {
       3
     ],
     textoAntes: "Esse objetivo é chamado de interesse público. \n\nExemplos:",
-    textoAntesDestaque: [],
-    textoAntesDestaqueNegrito: []
+    textoAntesDestaque: [
+      5,
+      6
+    ],
+    textoAntesDestaqueNegrito: [
+      5,
+      6,
+      8
+    ]
   }
 ],
 
