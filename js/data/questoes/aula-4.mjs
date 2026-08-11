@@ -118,12 +118,22 @@ window.AULA_DATA = {
     feedbackCorreto: "",
     feedbackErrado: "",
     opcoes: [
+      "O interesse do administrador sempre deve prevalecer.",
+      "O interesse privado nunca pode ser considerado.",
       "",
       ""
     ],
-    opcoesNegrito: [],
-    opcoesItalico: [],
+    opcoesNegrito: [
+      false,
+      false
+    ],
+    opcoesItalico: [
+      false,
+      false
+    ],
     opcoesDestaque: [
+      [],
+      [],
       [],
       []
     ],
