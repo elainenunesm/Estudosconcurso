@@ -38,13 +38,6 @@ body {
   flex-direction: column;
   box-shadow: 0 0 60px rgba(91, 43, 203, 0.15);
   overflow: hidden;
-  position: relative;
-  /* transform "vazio" (não muda nada visualmente) só pra virar o container de
-     referência de qualquer position:fixed lá dentro (ver .btn-marcar-cartao)
-     — sem isso, fixed usa a tela toda, e em telas largas o app fica mais
-     estreito que a tela (max-width acima), então o elemento "escapava" pra
-     fora do app, à direita. */
-  transform: translateZ(0);
 }
 
 /* HEADER */
@@ -54,6 +47,7 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 12px;
+  position: relative;
 }
 
 .btn-fechar {
@@ -175,13 +169,9 @@ body {
 }
 
 /* TELA DE CHECAGEM — pergunta curta em negrito antes do título grande */
-/* padding-right reserva espaço pro .btn-marcar-cartao (marca-página
-   absoluto no canto superior direito) não sobrepor o texto quando ele
-   quebra em duas linhas em telas estreitas. */
 .checagem-pergunta {
   font-weight: 700;
   margin-bottom: 6px;
-  padding-right: 48px;
 }
 
 .checagem-titulo {
@@ -192,7 +182,6 @@ body {
    frase analisada maior (é o que realmente importa ler com atenção). */
 .checagem-instrucao {
   font-size: 16px;
-  padding-right: 48px;
 }
 
 .checagem-frase {
@@ -206,9 +195,7 @@ body {
   color: #4A80F0;
 }
 
-/* TELA DE INTRODUÇÃO (Antes de começar) — padding-right reserva espaço pro
-   .btn-marcar-cartao (marca-página no canto superior direito) não sobrepor o
-   texto, igual já é feito em .checagem-pergunta/.checagem-instrucao. */
+/* TELA DE INTRODUÇÃO (Antes de começar) */
 .intro-card { position: relative; }
 .intro-label {
   display: block;
@@ -218,7 +205,6 @@ body {
   letter-spacing: 0.08em;
   color: #4A80F0;
   margin-bottom: 8px;
-  padding-right: 48px;
 }
 
 .intro-titulo {
@@ -227,7 +213,6 @@ body {
   color: #1a1a2e;
   line-height: 1.25;
   margin-bottom: 14px;
-  padding-right: 48px;
 }
 
 .intro-desc {
@@ -293,16 +278,16 @@ body {
   position: relative;
 }
 
-/* ETIQUETA "MARCAR PARA REVISÃO" — marca-página que fica de verdade "entrando"
-   pelo topo da tela, por cima do cabeçalho. position:fixed (em vez de
-   absolute) é proposital: um filho de .questao-area com position:absolute
-   fica preso dentro do overflow-y:auto dela e não escapa pra cima por mais
-   negativo que o "top" seja — fixed ignora esse recorte e usa a tela toda
-   como referência, então não fica preso/cortado. */
+/* ETIQUETA "MARCAR PARA REVISÃO" — botão único e fixo no cabeçalho (não é
+   mais recriado a cada tela, ver ligarBotaoMarcar/atualizarBotaoMarcar em
+   estudo.mjs), preso no rodapé do próprio .estudo-header (position:absolute
+   nele, que tem position:relative) — assim ele acompanha a altura real do
+   cabeçalho (que varia com o tamanho do título da aula), em vez de um valor
+   fixo em pixels que ficava errado quando o título quebrava em 2 linhas. */
 .btn-marcar-cartao {
-  position: fixed;
-  top: 64px;
-  right: 26px;
+  position: absolute;
+  bottom: -22px;
+  right: 16px;
   width: 36px;
   height: 44px;
   padding: 0;
@@ -999,13 +984,10 @@ body {
   position: relative;
 }
 
-/* padding-right reserva espaço pro .btn-marcar-cartao (canto superior direito)
-   não sobrepor o texto — mesmo motivo de .intro-titulo/.checagem-pergunta. */
 .resumo-titulo {
   font-size: 18px;
   color: #1a1a2e;
   margin-bottom: 4px;
-  padding-right: 48px;
 }
 
 .resumo-item {
@@ -1056,10 +1038,6 @@ body {
   line-height: 1.6;
   text-align: justify;
 }
-
-/* Só o texto ANTES da lista fica perto o bastante do topo do card pra precisar
-   reservar espaço do .btn-marcar-cartao — o de depois já está bem abaixo dele. */
-.lista-texto-antes { padding-right: 48px; }
 
 .lista-icone-topo {
   width: 72px;
@@ -1899,9 +1877,6 @@ body {
 .licao-corpo ul { padding-left: 20px; margin: 10px 0; }
 .licao-corpo p  { margin-bottom: 8px; text-align: justify; }
 .licao-corpo li { text-align: justify; }
-/* Só o primeiro elemento fica perto o bastante do .btn-marcar-cartao (canto
-   superior direito) pra precisar reservar espaço — os de baixo já estão livres. */
-.licao-corpo > *:first-child { padding-right: 48px; }
 
 .licao-btn-fechar {
   margin-top: 20px;
