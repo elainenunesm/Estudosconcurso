@@ -301,7 +301,7 @@ body {
    como referência, então não fica preso/cortado. */
 .btn-marcar-cartao {
   position: fixed;
-  top: 8px;
+  top: 54px;
   right: 26px;
   width: 36px;
   height: 44px;
