@@ -69,7 +69,15 @@ window.AULA_DATA = {
         tipo: "tarefa",
         cor: "#5B2BCB",
         corFundo: "#f0eaff",
-        texto: "Interditar estabelecimentos irregulares."
+        texto: "Interditar estabelecimentos irregulares.",
+        textoDestaque: [],
+        textoDestaqueNegrito: []
+      },
+      {
+        tipo: "tarefa",
+        cor: "#5B2BCB",
+        corFundo: "#f0eaff",
+        texto: "Realizar concursos públicos."
       }
     ],
     descricao: "",
