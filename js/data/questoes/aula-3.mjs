@@ -315,7 +315,7 @@ window.AULA_DATA = {
     ]
   },
   {
-    titulo: "Esse objetivo é chamado de interesse público. Exemplos:",
+    titulo: "",
     itens: [
       {
         tipo: "tarefa",
@@ -351,14 +351,8 @@ window.AULA_DATA = {
       }
     ],
     descricao: "Para realizar essas atividades, a lei concede alguns poderes especiais à Administração Pública.",
-    tituloDestaque: [
-      5,
-      6
-    ],
-    tituloDestaqueNegrito: [
-      5,
-      6
-    ],
+    tituloDestaque: [],
+    tituloDestaqueNegrito: [],
     descricaoDestaque: [
       12,
       13
@@ -368,7 +362,10 @@ window.AULA_DATA = {
       13,
       2,
       3
-    ]
+    ],
+    textoAntes: "Esse objetivo é chamado de interesse público. \n\nExemplos:",
+    textoAntesDestaque: [],
+    textoAntesDestaqueNegrito: []
   }
 ],
 
