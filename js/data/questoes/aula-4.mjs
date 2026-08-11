@@ -214,7 +214,9 @@ window.AULA_DATA = {
         tipo: "tarefa",
         cor: "#5B2BCB",
         corFundo: "#f0eaff",
-        texto: "❌ Doar um bem público para um amigo."
+        texto: "❌ Doar um bem público para um amigo.",
+        textoDestaque: [],
+        textoDestaqueNegrito: []
       }
     ],
     descricao: "",
