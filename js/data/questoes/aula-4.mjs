@@ -45,8 +45,13 @@ window.AULA_DATA = {
       titulo: "",
       subtitulo: "O interesse coletivo deve estar sempre acima dos interesses privados.",
       texto: "",
-      subtituloDestaque: [],
-      subtituloDestaqueNegrito: []
+      subtituloDestaque: [
+        6
+      ],
+      subtituloDestaqueNegrito: [
+        1,
+        2
+      ]
     }
   }
 ],
