@@ -77,7 +77,9 @@ window.AULA_DATA = {
         tipo: "tarefa",
         cor: "#5B2BCB",
         corFundo: "#f0eaff",
-        texto: "Realizar concursos públicos."
+        texto: "Realizar concursos públicos.",
+        textoDestaque: [],
+        textoDestaqueNegrito: []
       }
     ],
     descricao: "",
