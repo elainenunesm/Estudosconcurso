@@ -225,6 +225,12 @@ window.AULA_DATA = {
         texto: "❌ Abrir mão de dinheiro público por vontade própria.",
         textoDestaque: [],
         textoDestaqueNegrito: []
+      },
+      {
+        tipo: "tarefa",
+        cor: "#5B2BCB",
+        corFundo: "#f0eaff",
+        texto: "❌ Utilizar recursos públicos em benefício pessoal."
       }
     ],
     descricao: "",
