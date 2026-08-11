@@ -87,8 +87,16 @@ window.AULA_DATA = {
     tituloDestaque: [],
     tituloDestaqueNegrito: [],
     textoAntes: "Poderes são chamados de prerrogativas administrativas. Alguns exemplos:",
-    textoAntesDestaque: [],
-    textoAntesDestaqueNegrito: []
+    textoAntesDestaque: [
+      0,
+      4,
+      5
+    ],
+    textoAntesDestaqueNegrito: [
+      4,
+      5,
+      0
+    ]
   },
   {
     titulo: "",
