@@ -150,7 +150,7 @@ window.AULA_DATA = {
     feedbackErrado: "",
     opcoes: [
       "Permitida, pois o administrador é responsável pelo bem.",
-      "",
+      "Permitida quando o amigo prestar um serviço à sociedade.",
       "",
       ""
     ],
