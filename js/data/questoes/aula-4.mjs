@@ -115,13 +115,13 @@ window.AULA_DATA = {
   {
     titulo: "O Princípio da Supremacia do Interesse Público significa que:",
     correta: 2,
-    feedbackCorreto: "",
+    feedbackCorreto: "Corre",
     feedbackErrado: "",
     opcoes: [
       "O interesse do administrador sempre deve prevalecer.",
       "O interesse privado nunca pode ser considerado.",
       "Em determinadas situações, o interesse da sociedade pode prevalecer sobre o interesse particular.",
-      ""
+      "A Administração pode ignorar os direitos individuais."
     ],
     opcoesNegrito: [
       false,
