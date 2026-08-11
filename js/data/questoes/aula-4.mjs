@@ -119,6 +119,14 @@ window.AULA_DATA = {
         texto: "Não pode usar o cargo para benefício próprio.",
         textoDestaque: [],
         textoDestaqueNegrito: []
+      },
+      {
+        tipo: "tarefa",
+        cor: "#5B2BCB",
+        corFundo: "#f0eaff",
+        texto: "Não pode tomar decisões apenas porque deseja.",
+        textoDestaque: [],
+        textoDestaqueNegrito: []
       }
     ],
     descricao: "",
