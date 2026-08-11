@@ -290,7 +290,7 @@ body {
    telas de conteúdo (definição, contexto, exemplo). */
 .btn-marcar-cartao {
   position: absolute;
-  top: -14px;
+  top: -22px;
   right: 10px;
   width: 36px;
   height: 44px;
@@ -1888,6 +1888,9 @@ body {
 .licao-corpo ul { padding-left: 20px; margin: 10px 0; }
 .licao-corpo p  { margin-bottom: 8px; text-align: justify; }
 .licao-corpo li { text-align: justify; }
+/* Só o primeiro elemento fica perto o bastante do .btn-marcar-cartao (canto
+   superior direito) pra precisar reservar espaço — os de baixo já estão livres. */
+.licao-corpo > *:first-child { padding-right: 48px; }
 
 .licao-btn-fechar {
   margin-top: 20px;
