@@ -22,7 +22,7 @@ window.AULA_DATA = {
 ],
 
   antesComecar: {
-  titulo: "Regime Jurídico Administrativo.",
+  titulo: "Regime Jurídico Administrativo",
   descricao: "Nesta aula é a continuação da aula 1.",
   aprender: "o que são prerrogativas e os princípios da supremacia e da indisponibilidade do interesse público.",
   importancia: "Esses conceitos são a base de todo o Direito Administrativo e aparecem o tempo todo nas provas de concurso.",
