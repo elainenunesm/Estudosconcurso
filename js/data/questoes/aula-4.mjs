@@ -87,15 +87,19 @@ window.AULA_DATA = {
     opcoes: [
       "Direitos que todo cidadão possui perante o Estado.",
       "Poderes concedidos pela lei à Administração Pública para realizar suas atividades.",
-      ""
+      "Poderes que permitem ao administrador fazer tudo que desejar.",
+      "Benefícios concedidos aos servidores públicos."
     ],
     opcoesNegrito: [
+      false,
       false
     ],
     opcoesItalico: [
+      false,
       false
     ],
     opcoesDestaque: [
+      [],
       [],
       [],
       []
