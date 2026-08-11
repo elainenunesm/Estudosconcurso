@@ -47,7 +47,7 @@ window.AULA_DATA = {
 
   lista: [
   {
-    titulo: "Ppoderes são chamados de prerrogativas administrativas. Alguns exemplos:",
+    titulo: "Poderes são chamados de prerrogativas administrativas. Alguns exemplos:",
     itens: [
       {
         tipo: "tarefa",
@@ -83,8 +83,16 @@ window.AULA_DATA = {
       }
     ],
     descricao: "",
-    tituloDestaque: [],
-    tituloDestaqueNegrito: []
+    tituloDestaque: [
+      0,
+      4,
+      5
+    ],
+    tituloDestaqueNegrito: [
+      4,
+      5,
+      0
+    ]
   }
 ],
 
