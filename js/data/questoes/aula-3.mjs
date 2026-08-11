@@ -1,13 +1,13 @@
 'use strict';
 
 /**
- * AULA-3.MJS — Aula 1: Regime Jurídico Administrativo
+ * AULA-3.MJS — Aula 1: Fundamentos do Regime Jurídico Administrativo
  * Gerado pelo Construtor de Aulas (aba "Conteúdo da aula").
  */
 window.AULA_DATA = {
   id:     3,
   modulo: "Direito Administrativo",
-  titulo: "Aula 1: Regime Jurídico Administrativo",
+  titulo: "Aula 1: Fundamentos do Regime Jurídico Administrativo",
 
   // Ordem das telas na sequência de estudo — definida em "Estrutura das telas".
   ordem: [
