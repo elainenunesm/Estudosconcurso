@@ -1229,6 +1229,7 @@ function mostrarLista(aula, introIdx, i) {
     <div class="resumo-card">
       ${marcarCartaoHtml(`lista${i}`)}
       ${li.titulo ? `<p class="resumo-titulo"${estiloTextoInline(li, 'titulo')}>${renderFraseComDestaque(li.titulo || '', li.tituloDestaque, li.tituloDestaqueNegrito)}</p>` : ''}
+      ${li.textoAntes ? `<p class="lista-descricao"${estiloTextoInline(li, 'textoAntes')}>${renderFraseComDestaque(li.textoAntes, li.textoAntesDestaque, li.textoAntesDestaqueNegrito)}</p>` : ''}
       ${(li.itens || []).map(item => `
       <div class="resumo-item">
         <div class="resumo-icone" style="background:${item.corFundo}">
