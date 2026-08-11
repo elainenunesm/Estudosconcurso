@@ -217,6 +217,14 @@ window.AULA_DATA = {
         texto: "❌ Doar um bem público para um amigo.",
         textoDestaque: [],
         textoDestaqueNegrito: []
+      },
+      {
+        tipo: "tarefa",
+        cor: "#5B2BCB",
+        corFundo: "#f0eaff",
+        texto: "❌ Abrir mão de dinheiro público por vontade própria.",
+        textoDestaque: [],
+        textoDestaqueNegrito: []
       }
     ],
     descricao: "",
