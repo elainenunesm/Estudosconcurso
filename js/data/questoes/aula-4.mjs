@@ -230,7 +230,9 @@ window.AULA_DATA = {
         tipo: "tarefa",
         cor: "#5B2BCB",
         corFundo: "#f0eaff",
-        texto: "❌ Utilizar recursos públicos em benefício pessoal."
+        texto: "❌ Utilizar recursos públicos em benefício pessoal.",
+        textoDestaque: [],
+        textoDestaqueNegrito: []
       }
     ],
     descricao: "",
