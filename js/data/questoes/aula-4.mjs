@@ -145,7 +145,7 @@ window.AULA_DATA = {
   },
   {
     titulo: "Um administrador decide doar um bem público para um amigo. Essa atitude é:",
-    correta: 0,
+    correta: 2,
     feedbackCorreto: "",
     feedbackErrado: "",
     opcoes: [
