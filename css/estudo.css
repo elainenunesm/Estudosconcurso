@@ -38,6 +38,13 @@ body {
   flex-direction: column;
   box-shadow: 0 0 60px rgba(91, 43, 203, 0.15);
   overflow: hidden;
+  position: relative;
+  /* transform "vazio" (não muda nada visualmente) só pra virar o container de
+     referência de qualquer position:fixed lá dentro (ver .btn-marcar-cartao)
+     — sem isso, fixed usa a tela toda, e em telas largas o app fica mais
+     estreito que a tela (max-width acima), então o elemento "escapava" pra
+     fora do app, à direita. */
+  transform: translateZ(0);
 }
 
 /* HEADER */
