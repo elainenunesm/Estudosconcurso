@@ -13,7 +13,8 @@ window.AULA_DATA = {
   ordem: [
   "antesComecar",
   "lista0",
-  "lista1"
+  "lista1",
+  "exemplo0"
 ],
 
   antesComecar: {
@@ -32,7 +33,21 @@ window.AULA_DATA = {
   importanciaDestaqueNegrito: []
 },
 
-  exemplo: [],
+  exemplo: [
+  {
+    tipo: "dica",
+    texto: "",
+    conclusao: "",
+    obs: "",
+    pontos: [],
+    cardImagem: {
+      imagemUrl: "",
+      titulo: "",
+      subtitulo: "",
+      texto: ""
+    }
+  }
+],
 
   checagem: [],
 
