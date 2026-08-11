@@ -85,7 +85,7 @@ window.AULA_DATA = {
     feedbackCorreto: "",
     feedbackErrado: "",
     opcoes: [
-      "",
+      "Direitos que todo cidadão possui perante o Estado.",
       ""
     ],
     opcoesNegrito: [],
