@@ -236,8 +236,22 @@ window.AULA_DATA = {
       }
     ],
     descricao: "",
-    textoAntesDestaque: [],
-    textoAntesDestaqueNegrito: []
+    textoAntesDestaque: [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    textoAntesDestaqueNegrito: [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
   }
 ],
 
