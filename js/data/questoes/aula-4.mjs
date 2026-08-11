@@ -95,7 +95,9 @@ window.AULA_DATA = {
     textoAntesDestaqueNegrito: [
       4,
       5,
-      0
+      0,
+      7,
+      8
     ]
   },
   {
