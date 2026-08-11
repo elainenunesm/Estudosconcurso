@@ -82,7 +82,7 @@ window.AULA_DATA = {
   {
     titulo: "O que são prerrogativas administrativas?",
     correta: 1,
-    feedbackCorreto: "",
+    feedbackCorreto: "Corret",
     feedbackErrado: "",
     opcoes: [
       "Direitos que todo cidadão possui perante o Estado.",
